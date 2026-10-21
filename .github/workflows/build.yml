@@ -1,4 +1,4 @@
-name: Build TachiVF
+name: Build and publish TachiVF
 
 on:
   push:
@@ -9,10 +9,16 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: tachivf-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 40
+    outputs:
+      signed: ${{ steps.signing.outputs.ready }}
     steps:
       - uses: actions/checkout@v7.0.1
       - uses: actions/setup-java@v6.1.0
@@ -25,18 +31,38 @@ jobs:
       - uses: gradle/actions/setup-gradle@v6.4.0
         with:
           cache-provider: basic
+      - name: Prepare catalogue tools
+        run: python -m pip install -r scripts/requirements.txt
+      - name: Test catalogue generation
+        run: python -m unittest discover -s scripts/tests
+      - name: Restore signing key
+        id: signing
+        if: github.event_name != 'pull_request'
+        env:
+          SIGNING_BUNDLE: ${{ secrets.TACHIVF_SIGNING }}
+        run: python scripts/signing.py restore
       - name: Lint and compile the four extensions
         run: sh scripts/build.sh
-      - name: Save development APKs and JARs
+      - name: Save APKs and JARs
         uses: actions/upload-artifact@v7.0.2
         with:
-          name: TachiVF-development
+          name: TachiVF-build
           retention-days: 14
           if-no-files-found: error
           path: |
             src/fr/*/build/outputs/apk/release/*.apk
             src/fr/*/build/outputs/jar/release/*.jar
             src/fr/*/build/keiyoushi-source-info.json
+      - name: Generate signed catalogue
+        if: steps.signing.outputs.ready == 'true'
+        run: python scripts/build_repo.py --artifacts src/fr --output dist/repo --repository "$GITHUB_REPOSITORY"
+      - name: Save catalogue
+        if: steps.signing.outputs.ready == 'true'
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: TachiVF-repo
+          path: dist/repo/
+          if-no-files-found: error
       - name: Save lint reports
         if: always()
         uses: actions/upload-artifact@v7.0.2
@@ -47,3 +73,29 @@ jobs:
           path: |
             src/fr/*/build/reports/lint-results-release.*
             lib-multisrc/madara/build/reports/lint-results-release.*
+
+  publish:
+    needs: build
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && needs.build.outputs.signed == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          ref: repo
+          path: catalogue
+      - uses: actions/download-artifact@v8.0.2
+        with:
+          name: TachiVF-repo
+          path: published
+      - name: Update repo branch
+        run: |
+          git -C catalogue rm -r --ignore-unmatch .
+          cp -R published/. catalogue/
+          git -C catalogue add .
+          if git -C catalogue diff --cached --quiet; then exit 0; fi
+          git -C catalogue config user.name 'github-actions[bot]'
+          git -C catalogue config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C catalogue commit -m "Publish extensions from ${GITHUB_SHA::7}"
+          git -C catalogue push origin HEAD:repo

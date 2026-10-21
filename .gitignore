@@ -19,3 +19,4 @@ generated-src/
 !.env.example
 __pycache__/
 dist/
+signing-secret.json

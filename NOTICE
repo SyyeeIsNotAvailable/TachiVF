@@ -11,3 +11,6 @@ TachiVF is an independent project and is not an official Keiyoushi distribution.
 Local changes: project name and documentation, Gradle distribution download URL
 and checksum, development scripts, CI workflow, ignore rules, and removal of
 trailing spaces on two upstream lines (no behavioral change).
+
+The catalogue schema and generated Python bindings in scripts/index.proto and
+scripts/index_pb2.py are also imported from the same upstream revision.
