@@ -2,7 +2,8 @@ TachiVF
 
 This project contains code and resources from Keiyoushi extensions-source.
 Upstream: https://github.com/keiyoushi/extensions-source
-Imported revision: ff521c17bb3e503c01e658e8fac00b60a95829f3
+Initial imported revision: ff521c17bb3e503c01e658e8fac00b60a95829f3
+Later upstream revisions: docs/upstream/sync-state.json
 License: Apache License, Version 2.0 (see LICENSE).
 
 Original copyright and attribution notices are preserved in the source files.
