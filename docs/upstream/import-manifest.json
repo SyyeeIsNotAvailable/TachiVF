@@ -1,0 +1,1244 @@
+{
+  "repository": "keiyoushi/extensions-source",
+  "revision": "ff521c17bb3e503c01e658e8fac00b60a95829f3",
+  "files": [
+    {
+      "path": ".editorconfig",
+      "sha": "1125da65ccf44224e1034b05ed17c0da2a60d800",
+      "size": 745
+    },
+    {
+      "path": ".git-blame-ignore-revs",
+      "sha": "6e522634fde4ec857b453a38b4fd361dc1bba201",
+      "size": 140
+    },
+    {
+      "path": ".gitattributes",
+      "sha": "5df0b740c76ddc177cbed069df179e2cbea00b5c",
+      "size": 100
+    },
+    {
+      "path": ".gitignore",
+      "sha": "e014f939c7e973534c59fd0fbbab372b99862991",
+      "size": 131
+    },
+    {
+      "path": "AGENTS.md",
+      "sha": "8c7fc7d0529a2a1fca14d0391bf5ae6c6f4c9ad5",
+      "size": 4239
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha": "70bc83c2f0787a387f5accea98cb209b77529cd5",
+      "size": 121778
+    },
+    {
+      "path": "LICENSE",
+      "sha": "8dada3edaf50dbc082c9a125058f25def75e625a",
+      "size": 11357
+    },
+    {
+      "path": "build.gradle.kts",
+      "sha": "924c28cf8174879ab12d4273027d58472a838ed7",
+      "size": 528
+    },
+    {
+      "path": "ext-bootstrap.py",
+      "sha": "eb1b2d7d4da2b82feee7610e3844a779054fb84d",
+      "size": 8334
+    },
+    {
+      "path": "gradle.properties",
+      "sha": "f8a3baafbaa3a3fd364e75246110a82663e25b0d",
+      "size": 285
+    },
+    {
+      "path": "gradlew",
+      "sha": "249efbb032ce46a80c687c0723eb172e85f6a136",
+      "size": 8656
+    },
+    {
+      "path": "gradlew.bat",
+      "sha": "3185a43f78fabec15ca99b0ca6bf1e666218d5ca",
+      "size": 4776
+    },
+    {
+      "path": "ktlintCodeStyle.xml",
+      "sha": "fa4a4328b408a5a4d01c4043c798d9d1e0ccc1fb",
+      "size": 4074
+    },
+    {
+      "path": "settings.gradle.kts",
+      "sha": "d1cafce30560ebef0873ec18b325213cd66d8853",
+      "size": 1845
+    },
+    {
+      "path": "common/AndroidManifest.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8072ee00dbf16d9161b7464ef3d2194a7d659bcc",
+      "size": 52,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/8072ee00dbf16d9161b7464ef3d2194a7d659bcc"
+    },
+    {
+      "path": "common/proguard-rules.pro",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a0ed5630c467402bddf3bd54bd429d8330678b7",
+      "size": 2161,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/3a0ed5630c467402bddf3bd54bd429d8330678b7"
+    },
+    {
+      "path": "compiler/build.gradle.kts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ed7f06874f486aac4a4e6fd986b5917d6789be4",
+      "size": 193,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/3ed7f06874f486aac4a4e6fd986b5917d6789be4"
+    },
+    {
+      "path": "compiler/src/main/kotlin/keiyoushi/processor/SourceProcessor.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42532ca5240b156793b1ce4f7596523d0a6f423d",
+      "size": 19342,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/42532ca5240b156793b1ce4f7596523d0a6f423d"
+    },
+    {
+      "path": "compiler/src/main/resources/META-INF/services/com.google.devtools.ksp.processing.SymbolProcessorProvider",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "618574deeeab83a5a03fc6fe7c592f908515fc37",
+      "size": 45,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/618574deeeab83a5a03fc6fe7c592f908515fc37"
+    },
+    {
+      "path": "core/build.gradle.kts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90a5463c223b35b6f08875a6800f4536da8bfa16",
+      "size": 559,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/90a5463c223b35b6f08875a6800f4536da8bfa16"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/annotation/Source.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ceca76f8b302c1975ef19184d9c5f164405b3cf1",
+      "size": 125,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/ceca76f8b302c1975ef19184d9c5f164405b3cf1"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/network/CacheControlInterceptor.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e3372617f3d1b55f591f9d4add8471a73dbab08",
+      "size": 1245,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/8e3372617f3d1b55f591f9d4add8471a73dbab08"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/network/Cookie.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "313175fc2311ab52f1a98f7c452edf83c679d8ee",
+      "size": 4397,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/313175fc2311ab52f1a98f7c452edf83c679d8ee"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/network/OkHttp.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbc0ff978b2df8cd316656ef7659288dfd5b9eaf",
+      "size": 10609,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/dbc0ff978b2df8cd316656ef7659288dfd5b9eaf"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/network/RateLimit.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50862f8c2a6a8d696931b6f7216b3711569f347a",
+      "size": 4970,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/50862f8c2a6a8d696931b6f7216b3711569f347a"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/network/XorInterceptor.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f51c3acda2c49cef07865b28f9f5cd4e3e7c3f08",
+      "size": 1485,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/f51c3acda2c49cef07865b28f9f5cd4e3e7c3f08"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/source/CustomUrlPreferences.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46e5ae9b57ff8b570c6e35574398a80d18588c79",
+      "size": 3572,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/46e5ae9b57ff8b570c6e35574398a80d18588c79"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/source/KeiSource.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7df3a4ff516a17e4371e7c6f3830eb25f2d91e4",
+      "size": 16142,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/d7df3a4ff516a17e4371e7c6f3830eb25f2d91e4"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/source/MirrorPreferences.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "656dc67a325775355f4a095d38eb7bcc7bb70f2d",
+      "size": 1206,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/656dc67a325775355f4a095d38eb7bcc7bb70f2d"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/source/UrlActivity.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9dea98bf49ff9b843743b185b29ec9e5c013e202",
+      "size": 867,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/9dea98bf49ff9b843743b185b29ec9e5c013e202"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/utils/Binary.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac58c0a0fda9c97a742a8a846504147465b851a9",
+      "size": 5249,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/ac58c0a0fda9c97a742a8a846504147465b851a9"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/utils/Collections.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c1ba7c46b5db391e9813d5b3040301d2bffcd51",
+      "size": 480,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/4c1ba7c46b5db391e9813d5b3040301d2bffcd51"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/utils/Context.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b01b0f95ed1b013d99f872877c4925e81fbe51f",
+      "size": 175,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/0b01b0f95ed1b013d99f872877c4925e81fbe51f"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/utils/Crypto.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d42e7e6083a1e9f728f3b2bae8afabacfd7ffc08",
+      "size": 16215,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/d42e7e6083a1e9f728f3b2bae8afabacfd7ffc08"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/utils/Date.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34810fc87bef443112f8024017ffc4df76f82c1e",
+      "size": 3417,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/34810fc87bef443112f8024017ffc4df76f82c1e"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/utils/GraphQL.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09b4e70f0244e0dff669c86c2433b2a5998abffa",
+      "size": 16315,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/09b4e70f0244e0dff669c86c2433b2a5998abffa"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/utils/Inflater.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d46d2e6418c1489cce338ed3a5186a70223f82c5",
+      "size": 805,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/d46d2e6418c1489cce338ed3a5186a70223f82c5"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/utils/Json.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58ec504a1047b057d1aca38476a54fa4f3809644",
+      "size": 3281,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/58ec504a1047b057d1aca38476a54fa4f3809644"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/utils/JsonElement.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1653d540ce453addb396a6d196efe033a40b1bd",
+      "size": 2390,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/b1653d540ce453addb396a6d196efe033a40b1bd"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/utils/Jsoup.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81468719c8381beb822fbdc41e7de2b6a776233c",
+      "size": 2079,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/81468719c8381beb822fbdc41e7de2b6a776233c"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/utils/NextJs.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbc81dde83c9ef90624a6022803218921102c36a",
+      "size": 23669,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/dbc81dde83c9ef90624a6022803218921102c36a"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/utils/Preferences.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3e90dc373f9beb0787228b22dd190de24e0012a",
+      "size": 773,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/a3e90dc373f9beb0787228b22dd190de24e0012a"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/utils/Protobuf.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be66de44b9b6d99702499cf4ee588e1681107761",
+      "size": 5257,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/be66de44b9b6d99702499cf4ee588e1681107761"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/utils/SeedRandom.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12f8202d75b54790b72c056dc14356958fd959fd",
+      "size": 2851,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/12f8202d75b54790b72c056dc14356958fd959fd"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/utils/TurnstileHelper.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebe6bb48e25e1848ff26c3b9b0f4ec11712cb582",
+      "size": 10208,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/ebe6bb48e25e1848ff26c3b9b0f4ec11712cb582"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/utils/WebView.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e66e6019d259ef97a1c9db32004cc9ac1a32a8e",
+      "size": 25117,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/6e66e6019d259ef97a1c9db32004cc9ac1a32a8e"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/utils/protobuf/ProtobufDecoder.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa378d042d7f56def76a8115d73096e192ed310d",
+      "size": 21014,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/fa378d042d7f56def76a8115d73096e192ed310d"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/utils/protobuf/ProtobufEncoder.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42f94a2c0eab65658a7be9cf39e4f7c112d770d6",
+      "size": 11840,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/42f94a2c0eab65658a7be9cf39e4f7c112d770d6"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/utils/reactFlight/ReactFlightBigInt.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11728a071cdfdf69198d443224113ebf6b59f618",
+      "size": 1225,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/11728a071cdfdf69198d443224113ebf6b59f618"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/utils/reactFlight/ReactFlightNumber.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5125325994070e0d477f2660270dbdbf6ad75ea",
+      "size": 1738,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/f5125325994070e0d477f2660270dbdbf6ad75ea"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/utils/ui/ActivityTracker.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2451df4b0fb54b4dedc5c55d3a62aec090f1b1a6",
+      "size": 5274,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/2451df4b0fb54b4dedc5c55d3a62aec090f1b1a6"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/utils/ui/DialogHelper.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edd29cff4fd5ee7cbee4f547a4980f53310408c3",
+      "size": 11988,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/edd29cff4fd5ee7cbee4f547a4980f53310408c3"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/webview/internal/WebViewGlueBridge.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55d50a3dd90a6809207a8749195ee59907ce32b5",
+      "size": 16101,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/55d50a3dd90a6809207a8749195ee59907ce32b5"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/zip/Zip.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40ea583ce4e08577ede8e62553b54f9d6af70ccd",
+      "size": 15291,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/40ea583ce4e08577ede8e62553b54f9d6af70ccd"
+    },
+    {
+      "path": "core/src/main/kotlin/keiyoushi/zip/coroutines/Zip.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "097c00aab277891911e68b823c56085cae238c3c",
+      "size": 4817,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/097c00aab277891911e68b823c56085cae238c3c"
+    },
+    {
+      "path": "core/src/main/kotlin/org/chromium/support_lib_boundary/JsReplyProxyBoundaryInterface.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94694407affcbf3fbbb9feaa92939b14c6427031",
+      "size": 296,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/94694407affcbf3fbbb9feaa92939b14c6427031"
+    },
+    {
+      "path": "core/src/main/kotlin/org/chromium/support_lib_boundary/ScriptHandlerBoundaryInterface.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76a33c8d4752b3f20fbc0fc3cf78692f5eccab4d",
+      "size": 162,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/76a33c8d4752b3f20fbc0fc3cf78692f5eccab4d"
+    },
+    {
+      "path": "core/src/main/kotlin/org/chromium/support_lib_boundary/WebMessageBoundaryInterface.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07c779e0d168697b8a93a03754122c78a620da62",
+      "size": 260,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/07c779e0d168697b8a93a03754122c78a620da62"
+    },
+    {
+      "path": "core/src/main/kotlin/org/chromium/support_lib_boundary/WebMessagePayloadBoundaryInterface.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d5a4a073c4b049837e41d30787092a7f9b18b60",
+      "size": 241,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/7d5a4a073c4b049837e41d30787092a7f9b18b60"
+    },
+    {
+      "path": "core/src/main/kotlin/org/chromium/support_lib_boundary/WebSettingsBoundaryInterface.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84da3fc15c219cd36ca7910c826330b961fea95f",
+      "size": 325,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/84da3fc15c219cd36ca7910c826330b961fea95f"
+    },
+    {
+      "path": "core/src/main/kotlin/org/chromium/support_lib_boundary/WebViewProviderBoundaryInterface.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dac7e8485903af5a9a597232135281e3d55997ed",
+      "size": 630,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/dac7e8485903af5a9a597232135281e3d55997ed"
+    },
+    {
+      "path": "core/src/main/kotlin/org/chromium/support_lib_boundary/WebViewProviderFactoryBoundaryInterface.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4935046825a3ad61797134348edecf72f382c5a1",
+      "size": 379,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/4935046825a3ad61797134348edecf72f382c5a1"
+    },
+    {
+      "path": "core/src/main/kotlin/org/chromium/support_lib_boundary/WebkitToCompatConverterBoundaryInterface.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e8d56d7767db6636e4c371cf57f8aec87023f9f",
+      "size": 303,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/4e8d56d7767db6636e4c371cf57f8aec87023f9f"
+    },
+    {
+      "path": "core/src/main/res/mipmap-hdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f42dd847a79acc58a61a1bea40ca4c62d3ee93f",
+      "size": 1729,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/3f42dd847a79acc58a61a1bea40ca4c62d3ee93f"
+    },
+    {
+      "path": "core/src/main/res/mipmap-mdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e325b1ccf80af3c818bfe70133b22e4775d47aff",
+      "size": 943,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/e325b1ccf80af3c818bfe70133b22e4775d47aff"
+    },
+    {
+      "path": "core/src/main/res/mipmap-xhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "372a64aa25e7eaddd71da3666cec004ec5897822",
+      "size": 1874,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/372a64aa25e7eaddd71da3666cec004ec5897822"
+    },
+    {
+      "path": "core/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93fd38a560c3343a5abcc25f18c943ae95a80389",
+      "size": 4071,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/93fd38a560c3343a5abcc25f18c943ae95a80389"
+    },
+    {
+      "path": "core/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb807f04e57153d68fb1d9cc24c64d74e5603020",
+      "size": 5673,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/eb807f04e57153d68fb1d9cc24c64d74e5603020"
+    },
+    {
+      "path": "core/src/test/kotlin/keiyoushi/utils/CryptoTest.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d1a7a321d7e3003f1a69737d5bc03b1c4c5e878",
+      "size": 4579,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/5d1a7a321d7e3003f1a69737d5bc03b1c4c5e878"
+    },
+    {
+      "path": "core/src/test/kotlin/keiyoushi/utils/NextJsTest.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad82b47404f819f70e870b753b0e6f7c833b09a1",
+      "size": 5229,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/ad82b47404f819f70e870b753b0e6f7c833b09a1"
+    },
+    {
+      "path": "core/src/test/kotlin/keiyoushi/utils/XorTest.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "929d279a440362c1403450bf6945ee8a2e12fa9d",
+      "size": 11529,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/929d279a440362c1403450bf6945ee8a2e12fa9d"
+    },
+    {
+      "path": "core/src/test/resources/reactflight/collections.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "612a94c76060292331800c46ee149d6c0a501ff7",
+      "size": 110,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/612a94c76060292331800c46ee149d6c0a501ff7"
+    },
+    {
+      "path": "core/src/test/resources/reactflight/largetext.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da9a5dbf568ce982bcedbeb5f97f25f0c357b170",
+      "size": 3819,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/da9a5dbf568ce982bcedbeb5f97f25f0c357b170"
+    },
+    {
+      "path": "core/src/test/resources/reactflight/lazyrefs.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6c142c9ee63e22f3584bb0a4f6c06089e044b74",
+      "size": 111,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/a6c142c9ee63e22f3584bb0a4f6c06089e044b74"
+    },
+    {
+      "path": "core/src/test/resources/reactflight/markers.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ba1be9e779dc7e6bfe059dea962698f2710f1c5",
+      "size": 201,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/7ba1be9e779dc7e6bfe059dea962698f2710f1c5"
+    },
+    {
+      "path": "core/src/test/resources/reactflight/pathrefs.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5eb528042746124b546d7f90ab6cdf9f79589edb",
+      "size": 167,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/5eb528042746124b546d7f90ab6cdf9f79589edb"
+    },
+    {
+      "path": "core/src/test/resources/reactflight/promises.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c29c41859599bad07268a416fe9b2532ca6dbd3",
+      "size": 111,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/1c29c41859599bad07268a416fe9b2532ca6dbd3"
+    },
+    {
+      "path": "core/src/test/rsc-capture/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "504afef81fbadc8c0a072e1ac93f1376bca7f4a9",
+      "size": 32,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/504afef81fbadc8c0a072e1ac93f1376bca7f4a9"
+    },
+    {
+      "path": "core/src/test/rsc-capture/capture.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efd462d32dee22f4b3758d79fcf8991751f21e5f",
+      "size": 4353,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/efd462d32dee22f4b3758d79fcf8991751f21e5f"
+    },
+    {
+      "path": "core/src/test/rsc-capture/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbd262b57212f26b8281dcaabbcfe00eb1b833f3",
+      "size": 390,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/dbd262b57212f26b8281dcaabbcfe00eb1b833f3"
+    },
+    {
+      "path": "core/translations/strings.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77a0c9e30c3b7d95343cdbd0cf47a9f57edf1eaf",
+      "size": 2372,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/77a0c9e30c3b7d95343cdbd0cf47a9f57edf1eaf"
+    },
+    {
+      "path": "gradle/build-logic/build.gradle.kts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2225fcb1cb7e35bf29eb90dcbc31a811e7857aee",
+      "size": 2177,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/2225fcb1cb7e35bf29eb90dcbc31a811e7857aee"
+    },
+    {
+      "path": "gradle/build-logic/gradle.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6f4f60e0c2e3b15f485567790237e6c7d34712a",
+      "size": 344,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/d6f4f60e0c2e3b15f485567790237e6c7d34712a"
+    },
+    {
+      "path": "gradle/build-logic/settings.gradle.kts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d3a9a3ce5e6aeb8904d9994dc7f22a5f2c56104",
+      "size": 391,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/2d3a9a3ce5e6aeb8904d9994dc7f22a5f2c56104"
+    },
+    {
+      "path": "gradle/build-logic/src/main/kotlin/AndroidBasePlugin.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a70ea54397673175ae41bfd1b7ea5033cfc6d17d",
+      "size": 1664,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/a70ea54397673175ae41bfd1b7ea5033cfc6d17d"
+    },
+    {
+      "path": "gradle/build-logic/src/main/kotlin/ExtensionPlugin.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79f2e8c1ad5f42d38bb564ff6a4cd69fea21c577",
+      "size": 15946,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/79f2e8c1ad5f42d38bb564ff6a4cd69fea21c577"
+    },
+    {
+      "path": "gradle/build-logic/src/main/kotlin/LibraryPlugin.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62714d0e005a695353f51cd227ae3dcff6190191",
+      "size": 1693,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/62714d0e005a695353f51cd227ae3dcff6190191"
+    },
+    {
+      "path": "gradle/build-logic/src/main/kotlin/SpotlessPlugin.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a192c7191d1a4c737f25e758610295ec82fe22c",
+      "size": 2558,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/8a192c7191d1a4c737f25e758610295ec82fe22c"
+    },
+    {
+      "path": "gradle/build-logic/src/main/kotlin/ThemePlugin.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2cad476aa7a98632aaa791b113fb911e0c3ea9d6",
+      "size": 2327,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/2cad476aa7a98632aaa791b113fb911e0c3ea9d6"
+    },
+    {
+      "path": "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/api/ContentWarning.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf5322e5ada851fc7b2adae6de9ed1bf3ddbcbf9",
+      "size": 101,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/cf5322e5ada851fc7b2adae6de9ed1bf3ddbcbf9"
+    },
+    {
+      "path": "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/api/DeeplinkFilter.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0187e6e79c9f6e45d0b9379698dc912aea73f8a5",
+      "size": 178,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/0187e6e79c9f6e45d0b9379698dc912aea73f8a5"
+    },
+    {
+      "path": "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/api/dsl/BaseUrlConfig.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "187e4cabd5862dec33683c3688d201a8b960298d",
+      "size": 1521,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/187e4cabd5862dec33683c3688d201a8b960298d"
+    },
+    {
+      "path": "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/api/dsl/ExtensionDeeplink.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3babb146ac6d095a44baaff4311da73c80eb9daf",
+      "size": 356,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/3babb146ac6d095a44baaff4311da73c80eb9daf"
+    },
+    {
+      "path": "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/api/dsl/ExtensionSource.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d45e1bbb588a3b58d17808946373ea837b6b622",
+      "size": 672,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/6d45e1bbb588a3b58d17808946373ea837b6b622"
+    },
+    {
+      "path": "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/api/dsl/KeiyoushiExtension.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38b4b97fb9b3912c83d9bd9c6b8124a390e2e090",
+      "size": 1065,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/38b4b97fb9b3912c83d9bd9c6b8124a390e2e090"
+    },
+    {
+      "path": "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/api/dsl/KeiyoushiThemeExtension.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b14a3a4931f83420028303cf5aa7b542e53d144",
+      "size": 610,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/5b14a3a4931f83420028303cf5aa7b542e53d144"
+    },
+    {
+      "path": "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/internal/BaseUrl.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56f9ce57b03c42edb4b2a2c4319e6956cd9df6ea",
+      "size": 735,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/56f9ce57b03c42edb4b2a2c4319e6956cd9df6ea"
+    },
+    {
+      "path": "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/internal/Constant.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03a99b50c7ca50740ef40b4cf64f2d2d10865405",
+      "size": 477,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/03a99b50c7ca50740ef40b4cf64f2d2d10865405"
+    },
+    {
+      "path": "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/internal/MetadataModels.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09f454114f66ed4c3c1c544dee351ca1a797a4ab",
+      "size": 1364,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/09f454114f66ed4c3c1c544dee351ca1a797a4ab"
+    },
+    {
+      "path": "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/internal/Utils.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e050aaf4b181ecd8fe49ef587aab4dcf6cc7f21",
+      "size": 455,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/9e050aaf4b181ecd8fe49ef587aab4dcf6cc7f21"
+    },
+    {
+      "path": "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/internal/configurations/Kotlin.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c9f4e20d56d000d3dc8f41384aafb0da49fcc7d",
+      "size": 953,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/6c9f4e20d56d000d3dc8f41384aafb0da49fcc7d"
+    },
+    {
+      "path": "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/internal/extensions/DependencyHandlerScope.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8c6bc6d76157b53d2157fbf6abcc412fc55cfe5",
+      "size": 1733,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/f8c6bc6d76157b53d2157fbf6abcc412fc55cfe5"
+    },
+    {
+      "path": "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/internal/extensions/PluginManager.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49d46b52a880f97ef8226ce3962f31464e5f9ff1",
+      "size": 425,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/49d46b52a880f97ef8226ce3962f31464e5f9ff1"
+    },
+    {
+      "path": "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/internal/extensions/Project.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca22cba5d49f8b09fdd0881c93e184405f8ab067",
+      "size": 467,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/ca22cba5d49f8b09fdd0881c93e184405f8ab067"
+    },
+    {
+      "path": "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/tasks/CreateExtensionJarTask.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44fee780cba8cf1ede7f8784ca51a98c1bce9e96",
+      "size": 6990,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/44fee780cba8cf1ede7f8784ca51a98c1bce9e96"
+    },
+    {
+      "path": "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/tasks/GenerateManifestTask.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28eed58aed4f939fbb766c7ed5435d1f6f0004f3",
+      "size": 4374,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/28eed58aed4f939fbb766c7ed5435d1f6f0004f3"
+    },
+    {
+      "path": "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/tasks/GenerateSourceInfoTask.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cb6854da21b09681410b6ccf36daa1f6bd09a1a",
+      "size": 674,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/0cb6854da21b09681410b6ccf36daa1f6bd09a1a"
+    },
+    {
+      "path": "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/tasks/SignExtensionJarTask.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9282c4144dd49a2f20eaa54be74d78dbc03c5f39",
+      "size": 3193,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/9282c4144dd49a2f20eaa54be74d78dbc03c5f39"
+    },
+    {
+      "path": "gradle/kei.versions.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e05ca7005c8bbfadbaf3a14dd46938e3852494c",
+      "size": 399,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/1e05ca7005c8bbfadbaf3a14dd46938e3852494c"
+    },
+    {
+      "path": "gradle/libs.versions.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8eab45a8a9bf29bf3c2a7cb448af8e00fefddeca",
+      "size": 3744,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/8eab45a8a9bf29bf3c2a7cb448af8e00fefddeca"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.jar",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fa7f288283f81eec4952784c271abd7e0938dee",
+      "size": 48749,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/9fa7f288283f81eec4952784c271abd7e0938dee"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e7bb9fd6ab07c0350540fe458e1865de3ed5185",
+      "size": 281,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/2e7bb9fd6ab07c0350540fe458e1865de3ed5185"
+    },
+    {
+      "path": "lib/i18n/build.gradle.kts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b675575bf87ae3d08cc8a77276a3eeba8f3402b3",
+      "size": 43,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/b675575bf87ae3d08cc8a77276a3eeba8f3402b3"
+    },
+    {
+      "path": "lib/i18n/src/keiyoushi/lib/i18n/Intl.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f3c89a4e1ff285ecf354e8b69468ae303aa056c",
+      "size": 3647,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/0f3c89a4e1ff285ecf354e8b69468ae303aa056c"
+    },
+    {
+      "path": "lib-multisrc/madara/assets/i18n/messages_en.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea433fb768812b865d43dd156e3ae2478a55ea7b",
+      "size": 912,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/ea433fb768812b865d43dd156e3ae2478a55ea7b"
+    },
+    {
+      "path": "lib-multisrc/madara/assets/i18n/messages_es.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9d9f35a799c4d501c63e8cd60780ae163c18578",
+      "size": 957,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/a9d9f35a799c4d501c63e8cd60780ae163c18578"
+    },
+    {
+      "path": "lib-multisrc/madara/assets/i18n/messages_pt_br.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb90ab4aa0fddfb7666ad4396712f90225d81f20",
+      "size": 945,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/fb90ab4aa0fddfb7666ad4396712f90225d81f20"
+    },
+    {
+      "path": "lib-multisrc/madara/assets/i18n/messages_uk.properties",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98d93dd5f2b9f6cf559465cf7121521a87bbee79",
+      "size": 1260,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/98d93dd5f2b9f6cf559465cf7121521a87bbee79"
+    },
+    {
+      "path": "lib-multisrc/madara/build.gradle.kts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31844000deb576e184b66e4f97e2fd22a082385b",
+      "size": 201,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/31844000deb576e184b66e4f97e2fd22a082385b"
+    },
+    {
+      "path": "lib-multisrc/madara/res/mipmap-hdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f15dcdd4e2f695fa000c3b52d560ba1115b39b81",
+      "size": 2085,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/f15dcdd4e2f695fa000c3b52d560ba1115b39b81"
+    },
+    {
+      "path": "lib-multisrc/madara/res/mipmap-mdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08ce06b826feef38cca11b6b77d0ba846647de8a",
+      "size": 1192,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/08ce06b826feef38cca11b6b77d0ba846647de8a"
+    },
+    {
+      "path": "lib-multisrc/madara/res/mipmap-xhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48938ad702f64258eac6a4aa9b134809d95b2a72",
+      "size": 2823,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/48938ad702f64258eac6a4aa9b134809d95b2a72"
+    },
+    {
+      "path": "lib-multisrc/madara/res/mipmap-xxhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89d0c1386ccdb6e6e759c3c142e0070d83e03efc",
+      "size": 4876,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/89d0c1386ccdb6e6e759c3c142e0070d83e03efc"
+    },
+    {
+      "path": "lib-multisrc/madara/res/mipmap-xxxhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9873593c255129e04329879d3c79c8445f72c062",
+      "size": 9121,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/9873593c255129e04329879d3c79c8445f72c062"
+    },
+    {
+      "path": "lib-multisrc/madara/src/eu/kanade/tachiyomi/multisrc/madara/Filters.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "728af00ab7d1ad190ebfc1fe1f2fd8e0f9f7ffb9",
+      "size": 1414,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/728af00ab7d1ad190ebfc1fe1f2fd8e0f9f7ffb9"
+    },
+    {
+      "path": "lib-multisrc/madara/src/eu/kanade/tachiyomi/multisrc/madara/Madara.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9711026ddec85a885bcaa184be3f0b93798aac0b",
+      "size": 7925,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/9711026ddec85a885bcaa184be3f0b93798aac0b"
+    },
+    {
+      "path": "lib-multisrc/madara/src/eu/kanade/tachiyomi/multisrc/madara/MadaraBase.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc2b729df3df87f58fe9a692f4a895949b841c9c",
+      "size": 29691,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/bc2b729df3df87f58fe9a692f4a895949b841c9c"
+    },
+    {
+      "path": "lib-multisrc/madara/src/eu/kanade/tachiyomi/multisrc/madara/MadaraNoAjax.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac34716e09ad89d32ad0a1bc6df74a6df31ae90b",
+      "size": 7098,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/ac34716e09ad89d32ad0a1bc6df74a6df31ae90b"
+    },
+    {
+      "path": "lib-multisrc/madara/src/eu/kanade/tachiyomi/multisrc/madara/Models.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cb3d1f4ca19e05d4243b7cdb83ae86447292f13",
+      "size": 662,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/3cb3d1f4ca19e05d4243b7cdb83ae86447292f13"
+    },
+    {
+      "path": "src/fr/animesama/build.gradle.kts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74e62ce46a9505f120153bca875bf6745ca0452d",
+      "size": 386,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/74e62ce46a9505f120153bca875bf6745ca0452d"
+    },
+    {
+      "path": "src/fr/animesama/res/mipmap-hdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28926aebcc255258b59460248b85c4acadc98056",
+      "size": 6506,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/28926aebcc255258b59460248b85c4acadc98056"
+    },
+    {
+      "path": "src/fr/animesama/res/mipmap-mdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c37af5205a38e2e37ba2ac2f78dcbe70472e9430",
+      "size": 3712,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/c37af5205a38e2e37ba2ac2f78dcbe70472e9430"
+    },
+    {
+      "path": "src/fr/animesama/res/mipmap-xhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34b99154105b3cb784bb6c8cce90e108b51f5c92",
+      "size": 8718,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/34b99154105b3cb784bb6c8cce90e108b51f5c92"
+    },
+    {
+      "path": "src/fr/animesama/res/mipmap-xxhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0aadc59fb661d743e49a29e7cca3f13bf6dd35b",
+      "size": 15734,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/d0aadc59fb661d743e49a29e7cca3f13bf6dd35b"
+    },
+    {
+      "path": "src/fr/animesama/res/mipmap-xxxhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfe3ff6ee2fb7d63e6e088fa3cae674504986175",
+      "size": 23852,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/cfe3ff6ee2fb7d63e6e088fa3cae674504986175"
+    },
+    {
+      "path": "src/fr/animesama/src/eu/kanade/tachiyomi/extension/fr/animesama/AnimeSama.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0af28a4728d3e1cca9e6cf230205b23d149acffc",
+      "size": 11887,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/0af28a4728d3e1cca9e6cf230205b23d149acffc"
+    },
+    {
+      "path": "src/fr/animesama/src/eu/kanade/tachiyomi/extension/fr/animesama/Filters.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2703a532e06971b538b58f34f1d7bd1cefa19721",
+      "size": 829,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/2703a532e06971b538b58f34f1d7bd1cefa19721"
+    },
+    {
+      "path": "src/fr/aniverse/build.gradle.kts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2e4cb3efcde8b483949caf000e175fd4295ed06",
+      "size": 376,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/a2e4cb3efcde8b483949caf000e175fd4295ed06"
+    },
+    {
+      "path": "src/fr/aniverse/res/mipmap-hdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "813d83f187129ecc8d038e085d9a11b8d143c9e1",
+      "size": 3023,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/813d83f187129ecc8d038e085d9a11b8d143c9e1"
+    },
+    {
+      "path": "src/fr/aniverse/res/mipmap-mdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8aa0feabdad3860b321f7d9d95a285da06aed113",
+      "size": 1689,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/8aa0feabdad3860b321f7d9d95a285da06aed113"
+    },
+    {
+      "path": "src/fr/aniverse/res/mipmap-xhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5ff3cda2a75705b59141c72c758b326d59e0795",
+      "size": 4734,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/b5ff3cda2a75705b59141c72c758b326d59e0795"
+    },
+    {
+      "path": "src/fr/aniverse/res/mipmap-xxhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d59d2029d633cc2ed8da175a54fe72435174871",
+      "size": 8541,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/6d59d2029d633cc2ed8da175a54fe72435174871"
+    },
+    {
+      "path": "src/fr/aniverse/res/mipmap-xxxhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44f8db6c4c57ac4e2cff72c5dc88a6c4fc958f42",
+      "size": 13011,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/44f8db6c4c57ac4e2cff72c5dc88a6c4fc958f42"
+    },
+    {
+      "path": "src/fr/aniverse/src/eu/kanade/tachiyomi/extension/fr/aniverse/Aniverse.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "360da0f5861572a304853a8b7d54432e76ac2202",
+      "size": 4003,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/360da0f5861572a304853a8b7d54432e76ac2202"
+    },
+    {
+      "path": "src/fr/aniverse/src/eu/kanade/tachiyomi/extension/fr/aniverse/Dto.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1fc6dce1a7e334838b4e3cf486e7e53cb7dc141",
+      "size": 2881,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/b1fc6dce1a7e334838b4e3cf486e7e53cb7dc141"
+    },
+    {
+      "path": "src/fr/aniverse/src/eu/kanade/tachiyomi/extension/fr/aniverse/GenreFilter.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b14ff3a99b80a084e74641d2fb22dbda2e6ef67",
+      "size": 928,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/5b14ff3a99b80a084e74641d2fb22dbda2e6ef67"
+    },
+    {
+      "path": "src/fr/mangakawaii/build.gradle.kts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abc882228fdc5d6aa54fffb0d9e73c203dc5c6b9",
+      "size": 359,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/abc882228fdc5d6aa54fffb0d9e73c203dc5c6b9"
+    },
+    {
+      "path": "src/fr/mangakawaii/res/mipmap-hdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e694ea86c035ed8b7d5f3213c693d74555fe0bf",
+      "size": 3866,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/3e694ea86c035ed8b7d5f3213c693d74555fe0bf"
+    },
+    {
+      "path": "src/fr/mangakawaii/res/mipmap-mdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "612a062ac476575be27204ac1ad8f66df4df51cc",
+      "size": 2100,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/612a062ac476575be27204ac1ad8f66df4df51cc"
+    },
+    {
+      "path": "src/fr/mangakawaii/res/mipmap-xhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ae48fd238fab2a680db5eeb1663f3b5446d7e62",
+      "size": 5134,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/0ae48fd238fab2a680db5eeb1663f3b5446d7e62"
+    },
+    {
+      "path": "src/fr/mangakawaii/res/mipmap-xxhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b76422577d5e1be5aa408a11219667970273259f",
+      "size": 9789,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/b76422577d5e1be5aa408a11219667970273259f"
+    },
+    {
+      "path": "src/fr/mangakawaii/res/mipmap-xxxhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e626f1ef1fd0e5cd8ef060af96f0aa45feaf302d",
+      "size": 13251,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/e626f1ef1fd0e5cd8ef060af96f0aa45feaf302d"
+    },
+    {
+      "path": "src/fr/mangakawaii/src/eu/kanade/tachiyomi/extension/fr/mangakawaii/MangaKawaii.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2c08c314492c6c1fc7d0120a042e3f37da31ba3",
+      "size": 10114,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/c2c08c314492c6c1fc7d0120a042e3f37da31ba3"
+    },
+    {
+      "path": "src/fr/mangascantrad/build.gradle.kts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a099cdd548254ccba056933c2f2de9315d568ea",
+      "size": 334,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/4a099cdd548254ccba056933c2f2de9315d568ea"
+    },
+    {
+      "path": "src/fr/mangascantrad/res/mipmap-hdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "755ea5081de0815cb87422602cec16fae8469634",
+      "size": 6319,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/755ea5081de0815cb87422602cec16fae8469634"
+    },
+    {
+      "path": "src/fr/mangascantrad/res/mipmap-mdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11de5b9360270947d1c2361efcaad136da40cb96",
+      "size": 3145,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/11de5b9360270947d1c2361efcaad136da40cb96"
+    },
+    {
+      "path": "src/fr/mangascantrad/res/mipmap-xhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3bf04cc5e18a6a109d43759ead5354143858f2b",
+      "size": 10458,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/d3bf04cc5e18a6a109d43759ead5354143858f2b"
+    },
+    {
+      "path": "src/fr/mangascantrad/res/mipmap-xxhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33ee375a46f6651259549f451da8648e097c65c6",
+      "size": 21079,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/33ee375a46f6651259549f451da8648e097c65c6"
+    },
+    {
+      "path": "src/fr/mangascantrad/res/mipmap-xxxhdpi/ic_launcher.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec2b0e0a90c62c4af71149aad5781100e51c88f8",
+      "size": 35273,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/ec2b0e0a90c62c4af71149aad5781100e51c88f8"
+    },
+    {
+      "path": "src/fr/mangascantrad/src/eu/kanade/tachiyomi/extension/fr/mangascantrad/MangaScantrad.kt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "298dd04a376b338df8d6e533f1d4429bcf5f5341",
+      "size": 474,
+      "url": "https://api.github.com/repos/keiyoushi/extensions-source/git/blobs/298dd04a376b338df8d6e533f1d4429bcf5f5341"
+    }
+  ]
+}

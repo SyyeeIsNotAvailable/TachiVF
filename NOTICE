@@ -1,0 +1,13 @@
+TachiVF
+
+This project contains code and resources from Keiyoushi extensions-source.
+Upstream: https://github.com/keiyoushi/extensions-source
+Imported revision: ff521c17bb3e503c01e658e8fac00b60a95829f3
+License: Apache License, Version 2.0 (see LICENSE).
+
+Original copyright and attribution notices are preserved in the source files.
+TachiVF is an independent project and is not an official Keiyoushi distribution.
+
+Local changes: project name and documentation, Gradle distribution download URL
+and checksum, development scripts, CI workflow, ignore rules, and removal of
+trailing spaces on two upstream lines (no behavioral change).
