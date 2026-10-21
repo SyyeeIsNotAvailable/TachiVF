@@ -18,3 +18,4 @@ generated-src/
 .env.*
 !.env.example
 __pycache__/
+dist/

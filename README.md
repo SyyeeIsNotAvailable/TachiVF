@@ -17,7 +17,9 @@ Mangakagang est exclu de ce lot : le catalogue est public, mais la fiche et le l
 
 ## État
 
-Les quatre extensions, leurs icônes, leurs ressources et leurs dépendances locales sont importées. Leur fonctionnement dans Mihon et Tachimanga reste à vérifier sur appareil. Le dépôt de code privé ne constitue pas encore une adresse de dépôt installable dans ces applications.
+Les quatre extensions, leurs icônes, leurs ressources et leurs dépendances locales sont importées. La [première compilation GitHub](https://github.com/SyyeeIsNotAvailable/TachiVF/actions/runs/39603401429) a réussi le 21 octobre 2026 : quatre APK et quatre JAR ont été produits. Les fichiers d’essai sont disponibles dans l’artefact `TachiVF-development` de cette exécution (conservation : 14 jours).
+
+Leur fonctionnement dans Mihon et Tachimanga reste à vérifier sur appareil. Le dépôt de code privé ne constitue pas encore une adresse de dépôt installable dans ces applications.
 
 Le code de lecture est repris sans modification de Keiyoushi à la révision `ff521c17bb3e503c01e658e8fac00b60a95829f3`. Les identifiants de sources et de paquets sont conservés. Les fichiers d’origine et leurs empreintes sont recensés dans [docs/upstream](docs/upstream). Voir [NOTICE](NOTICE) et [LICENSE](LICENSE).
 

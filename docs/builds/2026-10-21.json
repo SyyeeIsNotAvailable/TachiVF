@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-21",
+  "status": "success",
+  "commit": "6874542ae54a2501ffa148f08100fb0a6ee50f80",
+  "runUrl": "https://github.com/SyyeeIsNotAvailable/TachiVF/actions/runs/39603401429",
+  "apkCount": 4,
+  "jarCount": 4,
+  "integrity": "SHA-256 des archives GitHub vérifié, CRC des ZIP vérifié, manifeste et classes.dex présents dans les APK.",
+  "sourceIdentities": "Quatre identifiants de sources vérifiés dans les métadonnées produites.",
+  "lint": [
+    {
+      "file": "src/fr/animesama/build/reports/lint-results-release.xml",
+      "issues": [
+        {
+          "id": "AppLinkWarning",
+          "severity": "Warning"
+        },
+        {
+          "id": "DataExtractionRules",
+          "severity": "Warning"
+        }
+      ]
+    },
+    {
+      "file": "src/fr/aniverse/build/reports/lint-results-release.xml",
+      "issues": [
+        {
+          "id": "AppLinkWarning",
+          "severity": "Warning"
+        },
+        {
+          "id": "DataExtractionRules",
+          "severity": "Warning"
+        }
+      ]
+    },
+    {
+      "file": "src/fr/mangakawaii/build/reports/lint-results-release.xml",
+      "issues": [
+        {
+          "id": "AppLinkWarning",
+          "severity": "Warning"
+        },
+        {
+          "id": "DataExtractionRules",
+          "severity": "Warning"
+        }
+      ]
+    },
+    {
+      "file": "src/fr/mangascantrad/build/reports/lint-results-release.xml",
+      "issues": [
+        {
+          "id": "AppLinkWarning",
+          "severity": "Warning"
+        },
+        {
+          "id": "DataExtractionRules",
+          "severity": "Warning"
+        }
+      ]
+    },
+    {
+      "file": "lib-multisrc/madara/build/reports/lint-results-release.xml",
+      "issues": []
+    }
+  ],
+  "outputs": [
+    {
+      "file": "tachiyomi-fr.animesama-v1.6.1.apk",
+      "bytes": 67835,
+      "sha256": "f65dcccd64f17232a1d908bb8f886ebe5a50f3e3f2153bf83e9ce3be4b367d69"
+    },
+    {
+      "file": "tachiyomi-fr.animesama-v1.6.1.jar",
+      "bytes": 87669,
+      "sha256": "e1c0340a307ea89625ebbc964aed280e876f1939143db89c6fa1802258dd5f24"
+    },
+    {
+      "file": "tachiyomi-fr.aniverse-v1.6.1.jar",
+      "bytes": 99290,
+      "sha256": "bf802de4660c1cc392f7fea28852a470afa463209f4d1ebd7aae3bce8cb33ef5"
+    },
+    {
+      "file": "tachiyomi-fr.aniverse-v1.6.1.apk",
+      "bytes": 57103,
+      "sha256": "7dcd47dd894ca3d75b34d46b3428364b1bfedb386c3535e0e2efcb2f5629b69a"
+    },
+    {
+      "file": "tachiyomi-fr.mangakawaii-v1.6.1.apk",
+      "bytes": 55455,
+      "sha256": "a52947cfb514aab40ecd7da49c86a47aa8be0204c993fd9c850d5c883ea69422"
+    },
+    {
+      "file": "tachiyomi-fr.mangakawaii-v1.6.1.jar",
+      "bytes": 64964,
+      "sha256": "e863b8e5b5d2a4f51400f99875c914b900e4c2c477af507c0d84dcc32e0640c4"
+    },
+    {
+      "file": "tachiyomi-fr.mangascantrad-v1.6.59.apk",
+      "bytes": 118574,
+      "sha256": "fb4051f163fb616d7c496eb9f3445b8c3a5aa32b920a5fcb108a7b575403c366"
+    },
+    {
+      "file": "tachiyomi-fr.mangascantrad-v1.6.59.jar",
+      "bytes": 160204,
+      "sha256": "754dedbaf2ec16b982e312603bc1fdb9443356a1604358991bea8f09964f682d"
+    }
+  ],
+  "deviceTests": {
+    "Mihon Android": "Non effectué",
+    "Tachimanga iOS": "Non effectué"
+  }
+}
