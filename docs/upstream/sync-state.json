@@ -1,0 +1,642 @@
+{
+  "files": {
+    ".editorconfig": {
+      "mode": "100644",
+      "sha": "1125da65ccf44224e1034b05ed17c0da2a60d800"
+    },
+    ".gitattributes": {
+      "mode": "100644",
+      "sha": "5df0b740c76ddc177cbed069df179e2cbea00b5c"
+    },
+    ".gitignore": {
+      "mode": "100644",
+      "sha": "e014f939c7e973534c59fd0fbbab372b99862991"
+    },
+    "AGENTS.md": {
+      "mode": "100644",
+      "sha": "8c7fc7d0529a2a1fca14d0391bf5ae6c6f4c9ad5"
+    },
+    "CONTRIBUTING.md": {
+      "mode": "100644",
+      "sha": "70bc83c2f0787a387f5accea98cb209b77529cd5"
+    },
+    "LICENSE": {
+      "mode": "100644",
+      "sha": "8dada3edaf50dbc082c9a125058f25def75e625a"
+    },
+    "build.gradle.kts": {
+      "mode": "100644",
+      "sha": "924c28cf8174879ab12d4273027d58472a838ed7"
+    },
+    "common/AndroidManifest.xml": {
+      "mode": "100644",
+      "sha": "8072ee00dbf16d9161b7464ef3d2194a7d659bcc"
+    },
+    "common/proguard-rules.pro": {
+      "mode": "100644",
+      "sha": "3a0ed5630c467402bddf3bd54bd429d8330678b7"
+    },
+    "compiler/build.gradle.kts": {
+      "mode": "100644",
+      "sha": "3ed7f06874f486aac4a4e6fd986b5917d6789be4"
+    },
+    "compiler/src/main/kotlin/keiyoushi/processor/SourceProcessor.kt": {
+      "mode": "100644",
+      "sha": "42532ca5240b156793b1ce4f7596523d0a6f423d"
+    },
+    "compiler/src/main/resources/META-INF/services/com.google.devtools.ksp.processing.SymbolProcessorProvider": {
+      "mode": "100644",
+      "sha": "618574deeeab83a5a03fc6fe7c592f908515fc37"
+    },
+    "core/build.gradle.kts": {
+      "mode": "100644",
+      "sha": "90a5463c223b35b6f08875a6800f4536da8bfa16"
+    },
+    "core/src/main/kotlin/keiyoushi/annotation/Source.kt": {
+      "mode": "100644",
+      "sha": "ceca76f8b302c1975ef19184d9c5f164405b3cf1"
+    },
+    "core/src/main/kotlin/keiyoushi/network/CacheControlInterceptor.kt": {
+      "mode": "100644",
+      "sha": "8e3372617f3d1b55f591f9d4add8471a73dbab08"
+    },
+    "core/src/main/kotlin/keiyoushi/network/Cookie.kt": {
+      "mode": "100644",
+      "sha": "313175fc2311ab52f1a98f7c452edf83c679d8ee"
+    },
+    "core/src/main/kotlin/keiyoushi/network/OkHttp.kt": {
+      "mode": "100644",
+      "sha": "dbc0ff978b2df8cd316656ef7659288dfd5b9eaf"
+    },
+    "core/src/main/kotlin/keiyoushi/network/RateLimit.kt": {
+      "mode": "100644",
+      "sha": "50862f8c2a6a8d696931b6f7216b3711569f347a"
+    },
+    "core/src/main/kotlin/keiyoushi/network/XorInterceptor.kt": {
+      "mode": "100644",
+      "sha": "f51c3acda2c49cef07865b28f9f5cd4e3e7c3f08"
+    },
+    "core/src/main/kotlin/keiyoushi/source/CustomUrlPreferences.kt": {
+      "mode": "100644",
+      "sha": "46e5ae9b57ff8b570c6e35574398a80d18588c79"
+    },
+    "core/src/main/kotlin/keiyoushi/source/KeiSource.kt": {
+      "mode": "100644",
+      "sha": "d7df3a4ff516a17e4371e7c6f3830eb25f2d91e4"
+    },
+    "core/src/main/kotlin/keiyoushi/source/MirrorPreferences.kt": {
+      "mode": "100644",
+      "sha": "656dc67a325775355f4a095d38eb7bcc7bb70f2d"
+    },
+    "core/src/main/kotlin/keiyoushi/source/UrlActivity.kt": {
+      "mode": "100644",
+      "sha": "9dea98bf49ff9b843743b185b29ec9e5c013e202"
+    },
+    "core/src/main/kotlin/keiyoushi/utils/Binary.kt": {
+      "mode": "100644",
+      "sha": "ac58c0a0fda9c97a742a8a846504147465b851a9"
+    },
+    "core/src/main/kotlin/keiyoushi/utils/Collections.kt": {
+      "mode": "100644",
+      "sha": "4c1ba7c46b5db391e9813d5b3040301d2bffcd51"
+    },
+    "core/src/main/kotlin/keiyoushi/utils/Context.kt": {
+      "mode": "100644",
+      "sha": "0b01b0f95ed1b013d99f872877c4925e81fbe51f"
+    },
+    "core/src/main/kotlin/keiyoushi/utils/Crypto.kt": {
+      "mode": "100644",
+      "sha": "d42e7e6083a1e9f728f3b2bae8afabacfd7ffc08"
+    },
+    "core/src/main/kotlin/keiyoushi/utils/Date.kt": {
+      "mode": "100644",
+      "sha": "34810fc87bef443112f8024017ffc4df76f82c1e"
+    },
+    "core/src/main/kotlin/keiyoushi/utils/GraphQL.kt": {
+      "mode": "100644",
+      "sha": "09b4e70f0244e0dff669c86c2433b2a5998abffa"
+    },
+    "core/src/main/kotlin/keiyoushi/utils/Inflater.kt": {
+      "mode": "100644",
+      "sha": "d46d2e6418c1489cce338ed3a5186a70223f82c5"
+    },
+    "core/src/main/kotlin/keiyoushi/utils/Json.kt": {
+      "mode": "100644",
+      "sha": "58ec504a1047b057d1aca38476a54fa4f3809644"
+    },
+    "core/src/main/kotlin/keiyoushi/utils/JsonElement.kt": {
+      "mode": "100644",
+      "sha": "b1653d540ce453addb396a6d196efe033a40b1bd"
+    },
+    "core/src/main/kotlin/keiyoushi/utils/Jsoup.kt": {
+      "mode": "100644",
+      "sha": "81468719c8381beb822fbdc41e7de2b6a776233c"
+    },
+    "core/src/main/kotlin/keiyoushi/utils/NextJs.kt": {
+      "mode": "100644",
+      "sha": "dbc81dde83c9ef90624a6022803218921102c36a"
+    },
+    "core/src/main/kotlin/keiyoushi/utils/Preferences.kt": {
+      "mode": "100644",
+      "sha": "a3e90dc373f9beb0787228b22dd190de24e0012a"
+    },
+    "core/src/main/kotlin/keiyoushi/utils/Protobuf.kt": {
+      "mode": "100644",
+      "sha": "be66de44b9b6d99702499cf4ee588e1681107761"
+    },
+    "core/src/main/kotlin/keiyoushi/utils/SeedRandom.kt": {
+      "mode": "100644",
+      "sha": "12f8202d75b54790b72c056dc14356958fd959fd"
+    },
+    "core/src/main/kotlin/keiyoushi/utils/TurnstileHelper.kt": {
+      "mode": "100644",
+      "sha": "ebe6bb48e25e1848ff26c3b9b0f4ec11712cb582"
+    },
+    "core/src/main/kotlin/keiyoushi/utils/WebView.kt": {
+      "mode": "100644",
+      "sha": "6e66e6019d259ef97a1c9db32004cc9ac1a32a8e"
+    },
+    "core/src/main/kotlin/keiyoushi/utils/protobuf/ProtobufDecoder.kt": {
+      "mode": "100644",
+      "sha": "fa378d042d7f56def76a8115d73096e192ed310d"
+    },
+    "core/src/main/kotlin/keiyoushi/utils/protobuf/ProtobufEncoder.kt": {
+      "mode": "100644",
+      "sha": "42f94a2c0eab65658a7be9cf39e4f7c112d770d6"
+    },
+    "core/src/main/kotlin/keiyoushi/utils/reactFlight/ReactFlightBigInt.kt": {
+      "mode": "100644",
+      "sha": "11728a071cdfdf69198d443224113ebf6b59f618"
+    },
+    "core/src/main/kotlin/keiyoushi/utils/reactFlight/ReactFlightNumber.kt": {
+      "mode": "100644",
+      "sha": "f5125325994070e0d477f2660270dbdbf6ad75ea"
+    },
+    "core/src/main/kotlin/keiyoushi/utils/ui/ActivityTracker.kt": {
+      "mode": "100644",
+      "sha": "2451df4b0fb54b4dedc5c55d3a62aec090f1b1a6"
+    },
+    "core/src/main/kotlin/keiyoushi/utils/ui/DialogHelper.kt": {
+      "mode": "100644",
+      "sha": "edd29cff4fd5ee7cbee4f547a4980f53310408c3"
+    },
+    "core/src/main/kotlin/keiyoushi/webview/internal/WebViewGlueBridge.kt": {
+      "mode": "100644",
+      "sha": "55d50a3dd90a6809207a8749195ee59907ce32b5"
+    },
+    "core/src/main/kotlin/keiyoushi/zip/Zip.kt": {
+      "mode": "100644",
+      "sha": "40ea583ce4e08577ede8e62553b54f9d6af70ccd"
+    },
+    "core/src/main/kotlin/keiyoushi/zip/coroutines/Zip.kt": {
+      "mode": "100644",
+      "sha": "097c00aab277891911e68b823c56085cae238c3c"
+    },
+    "core/src/main/kotlin/org/chromium/support_lib_boundary/JsReplyProxyBoundaryInterface.kt": {
+      "mode": "100644",
+      "sha": "94694407affcbf3fbbb9feaa92939b14c6427031"
+    },
+    "core/src/main/kotlin/org/chromium/support_lib_boundary/ScriptHandlerBoundaryInterface.kt": {
+      "mode": "100644",
+      "sha": "76a33c8d4752b3f20fbc0fc3cf78692f5eccab4d"
+    },
+    "core/src/main/kotlin/org/chromium/support_lib_boundary/WebMessageBoundaryInterface.kt": {
+      "mode": "100644",
+      "sha": "07c779e0d168697b8a93a03754122c78a620da62"
+    },
+    "core/src/main/kotlin/org/chromium/support_lib_boundary/WebMessagePayloadBoundaryInterface.kt": {
+      "mode": "100644",
+      "sha": "7d5a4a073c4b049837e41d30787092a7f9b18b60"
+    },
+    "core/src/main/kotlin/org/chromium/support_lib_boundary/WebSettingsBoundaryInterface.kt": {
+      "mode": "100644",
+      "sha": "84da3fc15c219cd36ca7910c826330b961fea95f"
+    },
+    "core/src/main/kotlin/org/chromium/support_lib_boundary/WebViewProviderBoundaryInterface.kt": {
+      "mode": "100644",
+      "sha": "dac7e8485903af5a9a597232135281e3d55997ed"
+    },
+    "core/src/main/kotlin/org/chromium/support_lib_boundary/WebViewProviderFactoryBoundaryInterface.kt": {
+      "mode": "100644",
+      "sha": "4935046825a3ad61797134348edecf72f382c5a1"
+    },
+    "core/src/main/kotlin/org/chromium/support_lib_boundary/WebkitToCompatConverterBoundaryInterface.kt": {
+      "mode": "100644",
+      "sha": "4e8d56d7767db6636e4c371cf57f8aec87023f9f"
+    },
+    "core/src/main/res/mipmap-hdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "3f42dd847a79acc58a61a1bea40ca4c62d3ee93f"
+    },
+    "core/src/main/res/mipmap-mdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "e325b1ccf80af3c818bfe70133b22e4775d47aff"
+    },
+    "core/src/main/res/mipmap-xhdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "372a64aa25e7eaddd71da3666cec004ec5897822"
+    },
+    "core/src/main/res/mipmap-xxhdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "93fd38a560c3343a5abcc25f18c943ae95a80389"
+    },
+    "core/src/main/res/mipmap-xxxhdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "eb807f04e57153d68fb1d9cc24c64d74e5603020"
+    },
+    "core/src/test/kotlin/keiyoushi/utils/CryptoTest.kt": {
+      "mode": "100644",
+      "sha": "5d1a7a321d7e3003f1a69737d5bc03b1c4c5e878"
+    },
+    "core/src/test/kotlin/keiyoushi/utils/NextJsTest.kt": {
+      "mode": "100644",
+      "sha": "ad82b47404f819f70e870b753b0e6f7c833b09a1"
+    },
+    "core/src/test/kotlin/keiyoushi/utils/XorTest.kt": {
+      "mode": "100644",
+      "sha": "929d279a440362c1403450bf6945ee8a2e12fa9d"
+    },
+    "core/src/test/resources/reactflight/collections.txt": {
+      "mode": "100644",
+      "sha": "612a94c76060292331800c46ee149d6c0a501ff7"
+    },
+    "core/src/test/resources/reactflight/largetext.txt": {
+      "mode": "100644",
+      "sha": "da9a5dbf568ce982bcedbeb5f97f25f0c357b170"
+    },
+    "core/src/test/resources/reactflight/lazyrefs.txt": {
+      "mode": "100644",
+      "sha": "a6c142c9ee63e22f3584bb0a4f6c06089e044b74"
+    },
+    "core/src/test/resources/reactflight/markers.txt": {
+      "mode": "100644",
+      "sha": "7ba1be9e779dc7e6bfe059dea962698f2710f1c5"
+    },
+    "core/src/test/resources/reactflight/pathrefs.txt": {
+      "mode": "100644",
+      "sha": "5eb528042746124b546d7f90ab6cdf9f79589edb"
+    },
+    "core/src/test/resources/reactflight/promises.txt": {
+      "mode": "100644",
+      "sha": "1c29c41859599bad07268a416fe9b2532ca6dbd3"
+    },
+    "core/src/test/rsc-capture/.gitignore": {
+      "mode": "100644",
+      "sha": "504afef81fbadc8c0a072e1ac93f1376bca7f4a9"
+    },
+    "core/src/test/rsc-capture/capture.mjs": {
+      "mode": "100644",
+      "sha": "efd462d32dee22f4b3758d79fcf8991751f21e5f"
+    },
+    "core/src/test/rsc-capture/package.json": {
+      "mode": "100644",
+      "sha": "dbd262b57212f26b8281dcaabbcfe00eb1b833f3"
+    },
+    "core/translations/strings.json": {
+      "mode": "100644",
+      "sha": "77a0c9e30c3b7d95343cdbd0cf47a9f57edf1eaf"
+    },
+    "ext-bootstrap.py": {
+      "mode": "100755",
+      "sha": "eb1b2d7d4da2b82feee7610e3844a779054fb84d"
+    },
+    "gradle.properties": {
+      "mode": "100644",
+      "sha": "f8a3baafbaa3a3fd364e75246110a82663e25b0d"
+    },
+    "gradle/build-logic/build.gradle.kts": {
+      "mode": "100644",
+      "sha": "2225fcb1cb7e35bf29eb90dcbc31a811e7857aee"
+    },
+    "gradle/build-logic/gradle.properties": {
+      "mode": "100644",
+      "sha": "d6f4f60e0c2e3b15f485567790237e6c7d34712a"
+    },
+    "gradle/build-logic/settings.gradle.kts": {
+      "mode": "100644",
+      "sha": "2d3a9a3ce5e6aeb8904d9994dc7f22a5f2c56104"
+    },
+    "gradle/build-logic/src/main/kotlin/AndroidBasePlugin.kt": {
+      "mode": "100644",
+      "sha": "a70ea54397673175ae41bfd1b7ea5033cfc6d17d"
+    },
+    "gradle/build-logic/src/main/kotlin/ExtensionPlugin.kt": {
+      "mode": "100644",
+      "sha": "79f2e8c1ad5f42d38bb564ff6a4cd69fea21c577"
+    },
+    "gradle/build-logic/src/main/kotlin/LibraryPlugin.kt": {
+      "mode": "100644",
+      "sha": "62714d0e005a695353f51cd227ae3dcff6190191"
+    },
+    "gradle/build-logic/src/main/kotlin/SpotlessPlugin.kt": {
+      "mode": "100644",
+      "sha": "8a192c7191d1a4c737f25e758610295ec82fe22c"
+    },
+    "gradle/build-logic/src/main/kotlin/ThemePlugin.kt": {
+      "mode": "100644",
+      "sha": "2cad476aa7a98632aaa791b113fb911e0c3ea9d6"
+    },
+    "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/api/ContentWarning.kt": {
+      "mode": "100644",
+      "sha": "cf5322e5ada851fc7b2adae6de9ed1bf3ddbcbf9"
+    },
+    "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/api/DeeplinkFilter.kt": {
+      "mode": "100644",
+      "sha": "0187e6e79c9f6e45d0b9379698dc912aea73f8a5"
+    },
+    "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/api/dsl/BaseUrlConfig.kt": {
+      "mode": "100644",
+      "sha": "187e4cabd5862dec33683c3688d201a8b960298d"
+    },
+    "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/api/dsl/ExtensionDeeplink.kt": {
+      "mode": "100644",
+      "sha": "3babb146ac6d095a44baaff4311da73c80eb9daf"
+    },
+    "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/api/dsl/ExtensionSource.kt": {
+      "mode": "100644",
+      "sha": "6d45e1bbb588a3b58d17808946373ea837b6b622"
+    },
+    "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/api/dsl/KeiyoushiExtension.kt": {
+      "mode": "100644",
+      "sha": "38b4b97fb9b3912c83d9bd9c6b8124a390e2e090"
+    },
+    "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/api/dsl/KeiyoushiThemeExtension.kt": {
+      "mode": "100644",
+      "sha": "5b14a3a4931f83420028303cf5aa7b542e53d144"
+    },
+    "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/internal/BaseUrl.kt": {
+      "mode": "100644",
+      "sha": "56f9ce57b03c42edb4b2a2c4319e6956cd9df6ea"
+    },
+    "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/internal/Constant.kt": {
+      "mode": "100644",
+      "sha": "03a99b50c7ca50740ef40b4cf64f2d2d10865405"
+    },
+    "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/internal/MetadataModels.kt": {
+      "mode": "100644",
+      "sha": "09f454114f66ed4c3c1c544dee351ca1a797a4ab"
+    },
+    "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/internal/Utils.kt": {
+      "mode": "100644",
+      "sha": "9e050aaf4b181ecd8fe49ef587aab4dcf6cc7f21"
+    },
+    "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/internal/configurations/Kotlin.kt": {
+      "mode": "100644",
+      "sha": "6c9f4e20d56d000d3dc8f41384aafb0da49fcc7d"
+    },
+    "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/internal/extensions/DependencyHandlerScope.kt": {
+      "mode": "100644",
+      "sha": "f8c6bc6d76157b53d2157fbf6abcc412fc55cfe5"
+    },
+    "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/internal/extensions/PluginManager.kt": {
+      "mode": "100644",
+      "sha": "49d46b52a880f97ef8226ce3962f31464e5f9ff1"
+    },
+    "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/internal/extensions/Project.kt": {
+      "mode": "100644",
+      "sha": "ca22cba5d49f8b09fdd0881c93e184405f8ab067"
+    },
+    "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/tasks/CreateExtensionJarTask.kt": {
+      "mode": "100644",
+      "sha": "44fee780cba8cf1ede7f8784ca51a98c1bce9e96"
+    },
+    "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/tasks/GenerateManifestTask.kt": {
+      "mode": "100644",
+      "sha": "28eed58aed4f939fbb766c7ed5435d1f6f0004f3"
+    },
+    "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/tasks/GenerateSourceInfoTask.kt": {
+      "mode": "100644",
+      "sha": "0cb6854da21b09681410b6ccf36daa1f6bd09a1a"
+    },
+    "gradle/build-logic/src/main/kotlin/io/github/keiyoushi/gradle/tasks/SignExtensionJarTask.kt": {
+      "mode": "100644",
+      "sha": "9282c4144dd49a2f20eaa54be74d78dbc03c5f39"
+    },
+    "gradle/kei.versions.toml": {
+      "mode": "100644",
+      "sha": "1e05ca7005c8bbfadbaf3a14dd46938e3852494c"
+    },
+    "gradle/libs.versions.toml": {
+      "mode": "100644",
+      "sha": "8eab45a8a9bf29bf3c2a7cb448af8e00fefddeca"
+    },
+    "gradle/wrapper/gradle-wrapper.jar": {
+      "mode": "100644",
+      "sha": "9fa7f288283f81eec4952784c271abd7e0938dee"
+    },
+    "gradle/wrapper/gradle-wrapper.properties": {
+      "mode": "100644",
+      "sha": "2e7bb9fd6ab07c0350540fe458e1865de3ed5185"
+    },
+    "gradlew": {
+      "mode": "100755",
+      "sha": "249efbb032ce46a80c687c0723eb172e85f6a136"
+    },
+    "gradlew.bat": {
+      "mode": "100644",
+      "sha": "3185a43f78fabec15ca99b0ca6bf1e666218d5ca"
+    },
+    "ktlintCodeStyle.xml": {
+      "mode": "100644",
+      "sha": "fa4a4328b408a5a4d01c4043c798d9d1e0ccc1fb"
+    },
+    "lib-multisrc/madara/assets/i18n/messages_en.properties": {
+      "mode": "100644",
+      "sha": "ea433fb768812b865d43dd156e3ae2478a55ea7b"
+    },
+    "lib-multisrc/madara/assets/i18n/messages_es.properties": {
+      "mode": "100644",
+      "sha": "a9d9f35a799c4d501c63e8cd60780ae163c18578"
+    },
+    "lib-multisrc/madara/assets/i18n/messages_pt_br.properties": {
+      "mode": "100644",
+      "sha": "fb90ab4aa0fddfb7666ad4396712f90225d81f20"
+    },
+    "lib-multisrc/madara/assets/i18n/messages_uk.properties": {
+      "mode": "100644",
+      "sha": "98d93dd5f2b9f6cf559465cf7121521a87bbee79"
+    },
+    "lib-multisrc/madara/build.gradle.kts": {
+      "mode": "100644",
+      "sha": "31844000deb576e184b66e4f97e2fd22a082385b"
+    },
+    "lib-multisrc/madara/res/mipmap-hdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "f15dcdd4e2f695fa000c3b52d560ba1115b39b81"
+    },
+    "lib-multisrc/madara/res/mipmap-mdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "08ce06b826feef38cca11b6b77d0ba846647de8a"
+    },
+    "lib-multisrc/madara/res/mipmap-xhdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "48938ad702f64258eac6a4aa9b134809d95b2a72"
+    },
+    "lib-multisrc/madara/res/mipmap-xxhdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "89d0c1386ccdb6e6e759c3c142e0070d83e03efc"
+    },
+    "lib-multisrc/madara/res/mipmap-xxxhdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "9873593c255129e04329879d3c79c8445f72c062"
+    },
+    "lib-multisrc/madara/src/eu/kanade/tachiyomi/multisrc/madara/Filters.kt": {
+      "mode": "100644",
+      "sha": "728af00ab7d1ad190ebfc1fe1f2fd8e0f9f7ffb9"
+    },
+    "lib-multisrc/madara/src/eu/kanade/tachiyomi/multisrc/madara/Madara.kt": {
+      "mode": "100644",
+      "sha": "9711026ddec85a885bcaa184be3f0b93798aac0b"
+    },
+    "lib-multisrc/madara/src/eu/kanade/tachiyomi/multisrc/madara/MadaraBase.kt": {
+      "mode": "100644",
+      "sha": "bc2b729df3df87f58fe9a692f4a895949b841c9c"
+    },
+    "lib-multisrc/madara/src/eu/kanade/tachiyomi/multisrc/madara/MadaraNoAjax.kt": {
+      "mode": "100644",
+      "sha": "ac34716e09ad89d32ad0a1bc6df74a6df31ae90b"
+    },
+    "lib-multisrc/madara/src/eu/kanade/tachiyomi/multisrc/madara/Models.kt": {
+      "mode": "100644",
+      "sha": "3cb3d1f4ca19e05d4243b7cdb83ae86447292f13"
+    },
+    "lib/i18n/build.gradle.kts": {
+      "mode": "100644",
+      "sha": "b675575bf87ae3d08cc8a77276a3eeba8f3402b3"
+    },
+    "lib/i18n/src/keiyoushi/lib/i18n/Intl.kt": {
+      "mode": "100644",
+      "sha": "0f3c89a4e1ff285ecf354e8b69468ae303aa056c"
+    },
+    "settings.gradle.kts": {
+      "mode": "100644",
+      "sha": "d1cafce30560ebef0873ec18b325213cd66d8853"
+    },
+    "src/fr/animesama/build.gradle.kts": {
+      "mode": "100644",
+      "sha": "74e62ce46a9505f120153bca875bf6745ca0452d"
+    },
+    "src/fr/animesama/res/mipmap-hdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "28926aebcc255258b59460248b85c4acadc98056"
+    },
+    "src/fr/animesama/res/mipmap-mdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "c37af5205a38e2e37ba2ac2f78dcbe70472e9430"
+    },
+    "src/fr/animesama/res/mipmap-xhdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "34b99154105b3cb784bb6c8cce90e108b51f5c92"
+    },
+    "src/fr/animesama/res/mipmap-xxhdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "d0aadc59fb661d743e49a29e7cca3f13bf6dd35b"
+    },
+    "src/fr/animesama/res/mipmap-xxxhdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "cfe3ff6ee2fb7d63e6e088fa3cae674504986175"
+    },
+    "src/fr/animesama/src/eu/kanade/tachiyomi/extension/fr/animesama/AnimeSama.kt": {
+      "mode": "100644",
+      "sha": "0af28a4728d3e1cca9e6cf230205b23d149acffc"
+    },
+    "src/fr/animesama/src/eu/kanade/tachiyomi/extension/fr/animesama/Filters.kt": {
+      "mode": "100644",
+      "sha": "2703a532e06971b538b58f34f1d7bd1cefa19721"
+    },
+    "src/fr/aniverse/build.gradle.kts": {
+      "mode": "100644",
+      "sha": "a2e4cb3efcde8b483949caf000e175fd4295ed06"
+    },
+    "src/fr/aniverse/res/mipmap-hdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "813d83f187129ecc8d038e085d9a11b8d143c9e1"
+    },
+    "src/fr/aniverse/res/mipmap-mdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "8aa0feabdad3860b321f7d9d95a285da06aed113"
+    },
+    "src/fr/aniverse/res/mipmap-xhdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "b5ff3cda2a75705b59141c72c758b326d59e0795"
+    },
+    "src/fr/aniverse/res/mipmap-xxhdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "6d59d2029d633cc2ed8da175a54fe72435174871"
+    },
+    "src/fr/aniverse/res/mipmap-xxxhdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "44f8db6c4c57ac4e2cff72c5dc88a6c4fc958f42"
+    },
+    "src/fr/aniverse/src/eu/kanade/tachiyomi/extension/fr/aniverse/Aniverse.kt": {
+      "mode": "100644",
+      "sha": "360da0f5861572a304853a8b7d54432e76ac2202"
+    },
+    "src/fr/aniverse/src/eu/kanade/tachiyomi/extension/fr/aniverse/Dto.kt": {
+      "mode": "100644",
+      "sha": "b1fc6dce1a7e334838b4e3cf486e7e53cb7dc141"
+    },
+    "src/fr/aniverse/src/eu/kanade/tachiyomi/extension/fr/aniverse/GenreFilter.kt": {
+      "mode": "100644",
+      "sha": "5b14ff3a99b80a084e74641d2fb22dbda2e6ef67"
+    },
+    "src/fr/mangakawaii/build.gradle.kts": {
+      "mode": "100644",
+      "sha": "abc882228fdc5d6aa54fffb0d9e73c203dc5c6b9"
+    },
+    "src/fr/mangakawaii/res/mipmap-hdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "3e694ea86c035ed8b7d5f3213c693d74555fe0bf"
+    },
+    "src/fr/mangakawaii/res/mipmap-mdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "612a062ac476575be27204ac1ad8f66df4df51cc"
+    },
+    "src/fr/mangakawaii/res/mipmap-xhdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "0ae48fd238fab2a680db5eeb1663f3b5446d7e62"
+    },
+    "src/fr/mangakawaii/res/mipmap-xxhdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "b76422577d5e1be5aa408a11219667970273259f"
+    },
+    "src/fr/mangakawaii/res/mipmap-xxxhdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "e626f1ef1fd0e5cd8ef060af96f0aa45feaf302d"
+    },
+    "src/fr/mangakawaii/src/eu/kanade/tachiyomi/extension/fr/mangakawaii/MangaKawaii.kt": {
+      "mode": "100644",
+      "sha": "c2c08c314492c6c1fc7d0120a042e3f37da31ba3"
+    },
+    "src/fr/mangascantrad/build.gradle.kts": {
+      "mode": "100644",
+      "sha": "4a099cdd548254ccba056933c2f2de9315d568ea"
+    },
+    "src/fr/mangascantrad/res/mipmap-hdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "755ea5081de0815cb87422602cec16fae8469634"
+    },
+    "src/fr/mangascantrad/res/mipmap-mdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "11de5b9360270947d1c2361efcaad136da40cb96"
+    },
+    "src/fr/mangascantrad/res/mipmap-xhdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "d3bf04cc5e18a6a109d43759ead5354143858f2b"
+    },
+    "src/fr/mangascantrad/res/mipmap-xxhdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "33ee375a46f6651259549f451da8648e097c65c6"
+    },
+    "src/fr/mangascantrad/res/mipmap-xxxhdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "ec2b0e0a90c62c4af71149aad5781100e51c88f8"
+    },
+    "src/fr/mangascantrad/src/eu/kanade/tachiyomi/extension/fr/mangascantrad/MangaScantrad.kt": {
+      "mode": "100644",
+      "sha": "298dd04a376b338df8d6e533f1d4429bcf5f5341"
+    }
+  },
+  "repository": "keiyoushi/extensions-source",
+  "revision": "ff521c17bb3e503c01e658e8fac00b60a95829f3"
+}

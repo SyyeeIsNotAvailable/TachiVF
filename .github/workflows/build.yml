@@ -5,6 +5,14 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
+  workflow_call:
+    inputs:
+      source_ref:
+        required: true
+        type: string
+    secrets:
+      TACHIVF_SIGNING:
+        required: true
 
 permissions:
   contents: read
@@ -21,6 +29,8 @@ jobs:
       signed: ${{ steps.signing.outputs.ready }}
     steps:
       - uses: actions/checkout@v7.0.1
+        with:
+          ref: ${{ inputs.source_ref || github.sha }}
       - uses: actions/setup-java@v6.1.0
         with:
           distribution: temurin
@@ -90,6 +100,8 @@ jobs:
           name: TachiVF-repo
           path: published
       - name: Update repo branch
+        env:
+          SOURCE_SHA: ${{ inputs.source_ref || github.sha }}
         run: |
           git -C catalogue rm -r --ignore-unmatch .
           cp -R published/. catalogue/
@@ -97,5 +109,5 @@ jobs:
           if git -C catalogue diff --cached --quiet; then exit 0; fi
           git -C catalogue config user.name 'github-actions[bot]'
           git -C catalogue config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git -C catalogue commit -m "Publish extensions from ${GITHUB_SHA::7}"
+          git -C catalogue commit -m "Publish extensions from ${SOURCE_SHA::7}"
           git -C catalogue push origin HEAD:repo
