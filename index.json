@@ -1,0 +1,96 @@
+{
+  "name": "TachiVF",
+  "badgeLabel": "VF",
+  "signingKey": "8ebb593e2026bf312e95a013d67fec5c6f5bb40fb49601cac28200b18f8ebe9f",
+  "contact": {
+    "website": "https://github.com/SyyeeIsNotAvailable/TachiVF"
+  },
+  "extensionList": {
+    "extensions": [
+      {
+        "name": "AnimeSama",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.animesama",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/SyyeeIsNotAvailable/TachiVF/repo/apk/tachiyomi-fr.animesama-v1.6.1.apk",
+          "iconUrl": "https://raw.githubusercontent.com/SyyeeIsNotAvailable/TachiVF/repo/icon/eu.kanade.tachiyomi.extension.fr.animesama.png",
+          "jarUrl": "https://raw.githubusercontent.com/SyyeeIsNotAvailable/TachiVF/repo/jar/tachiyomi-fr.animesama-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "5104384223103778991",
+            "name": "AnimeSama",
+            "language": "fr",
+            "homeUrl": "https://anime-sama.to"
+          }
+        ]
+      },
+      {
+        "name": "Aniverse",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.aniverse",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/SyyeeIsNotAvailable/TachiVF/repo/apk/tachiyomi-fr.aniverse-v1.6.1.apk",
+          "iconUrl": "https://raw.githubusercontent.com/SyyeeIsNotAvailable/TachiVF/repo/icon/eu.kanade.tachiyomi.extension.fr.aniverse.png",
+          "jarUrl": "https://raw.githubusercontent.com/SyyeeIsNotAvailable/TachiVF/repo/jar/tachiyomi-fr.aniverse-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "4821794959228633650",
+            "name": "Aniverse",
+            "language": "fr",
+            "homeUrl": "https://aniverse.fr"
+          }
+        ]
+      },
+      {
+        "name": "Mangakawaii",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.mangakawaii",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/SyyeeIsNotAvailable/TachiVF/repo/apk/tachiyomi-fr.mangakawaii-v1.6.1.apk",
+          "iconUrl": "https://raw.githubusercontent.com/SyyeeIsNotAvailable/TachiVF/repo/icon/eu.kanade.tachiyomi.extension.fr.mangakawaii.png",
+          "jarUrl": "https://raw.githubusercontent.com/SyyeeIsNotAvailable/TachiVF/repo/jar/tachiyomi-fr.mangakawaii-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "1384625280015637699",
+            "name": "Mangakawaii",
+            "language": "fr",
+            "homeUrl": "https://www.mangakawaii.fr"
+          }
+        ]
+      },
+      {
+        "name": "Manga-Scantrad",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.mangascantrad",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/SyyeeIsNotAvailable/TachiVF/repo/apk/tachiyomi-fr.mangascantrad-v1.6.59.apk",
+          "iconUrl": "https://raw.githubusercontent.com/SyyeeIsNotAvailable/TachiVF/repo/icon/eu.kanade.tachiyomi.extension.fr.mangascantrad.png",
+          "jarUrl": "https://raw.githubusercontent.com/SyyeeIsNotAvailable/TachiVF/repo/jar/tachiyomi-fr.mangascantrad-v1.6.59.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106059",
+        "versionName": "1.6.59",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "540252682818453285",
+            "name": "Manga-Scantrad",
+            "language": "fr",
+            "homeUrl": "https://manga-scantrad.io"
+          }
+        ]
+      }
+    ]
+  }
+}
