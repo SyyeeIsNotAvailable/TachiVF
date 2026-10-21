@@ -16,4 +16,4 @@ Sources : Manga-Scantrad, MangaKawaii, AnimeSama Scan, Aniverse.
 - Compilation : `sh scripts/build.sh` ou `./scripts/build.ps1`.
 
 Basé sur [Keiyoushi](https://github.com/keiyoushi/extensions-source), licence Apache-2.0.
-Tests dans Mihon et Tachimanga : en cours.
+Tachimanga : quatre sources validées. Mihon : non testé.
