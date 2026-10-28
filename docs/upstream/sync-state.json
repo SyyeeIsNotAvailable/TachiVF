@@ -134,7 +134,7 @@
     },
     "core/src/main/kotlin/keiyoushi/utils/NextJs.kt": {
       "mode": "100644",
-      "sha": "dbc81dde83c9ef90624a6022803218921102c36a"
+      "sha": "d34a04b0cb6bc0a2c53ca59951a01e2dc65ad14b"
     },
     "core/src/main/kotlin/keiyoushi/utils/Preferences.kt": {
       "mode": "100644",
@@ -250,7 +250,7 @@
     },
     "core/src/test/kotlin/keiyoushi/utils/NextJsTest.kt": {
       "mode": "100644",
-      "sha": "ad82b47404f819f70e870b753b0e6f7c833b09a1"
+      "sha": "be906c9c983b34fd143bea0e6475daf885490dd1"
     },
     "core/src/test/kotlin/keiyoushi/utils/XorTest.kt": {
       "mode": "100644",
@@ -546,7 +546,7 @@
     },
     "src/fr/aniverse/build.gradle.kts": {
       "mode": "100644",
-      "sha": "a2e4cb3efcde8b483949caf000e175fd4295ed06"
+      "sha": "4cfa8d89165a2ff4e080cca8bb6ed33054691085"
     },
     "src/fr/aniverse/res/mipmap-hdpi/ic_launcher.png": {
       "mode": "100644",
@@ -638,5 +638,5 @@
     }
   },
   "repository": "keiyoushi/extensions-source",
-  "revision": "949dea252eb8e867b7b40834a26e13088764ff55"
+  "revision": "7b21db629c887a46a08cfea76285c7d84e733046"
 }
