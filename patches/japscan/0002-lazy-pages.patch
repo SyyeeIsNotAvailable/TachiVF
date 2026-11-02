@@ -11,15 +11,7 @@ diff --git a/src/fr/japscan/build.gradle.kts b/src/fr/japscan/build.gradle.kts
 diff --git a/src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/Japscan.kt b/src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/Japscan.kt
 --- a/src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/Japscan.kt
 +++ b/src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/Japscan.kt
-@@ -3,6 +3,7 @@
- import android.util.Base64
- import android.webkit.WebResourceResponse
- import androidx.preference.ListPreference
-+import androidx.preference.Preference
- import androidx.preference.PreferenceScreen
- import eu.kanade.tachiyomi.source.ConfigurableSource
- import eu.kanade.tachiyomi.source.model.FilterList
-@@ -17,11 +18,13 @@
+@@ -17,11 +17,13 @@
  import keiyoushi.network.post
  import keiyoushi.network.rateLimit
  import keiyoushi.source.KeiSource
@@ -33,7 +25,7 @@ diff --git a/src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/Japscan
  import keiyoushi.utils.tryParseDate
  import kotlinx.coroutines.sync.Mutex
  import kotlinx.coroutines.sync.withLock
-@@ -238,6 +241,7 @@
+@@ -238,6 +240,7 @@
  
      override suspend fun getPageList(chapter: SChapter): List<Page> {
          pageListMutex.withLock {
@@ -41,7 +33,7 @@ diff --git a/src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/Japscan
              val chapterUrl = baseUrl + chapter.url
              sweepPageCache(applicationContext.cacheDir)
  
-@@ -246,21 +250,96 @@
+@@ -246,21 +249,96 @@
              val urlSegment = chapter.url.trimStart('/').substringBefore('/').lowercase()
              val isWebtoon = urlSegment == "manhwa" || urlSegment == "manhua"
  
@@ -139,7 +131,7 @@ diff --git a/src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/Japscan
          val savedPaths = mutableListOf<String>()
          var done = false
  
-@@ -275,7 +354,12 @@
+@@ -275,7 +353,12 @@
              }
  
              jsBridge("${interfaceName}_savePage") { dataUri ->
@@ -153,7 +145,7 @@ diff --git a/src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/Japscan
              }
  
              jsBridge("${interfaceName}_passDone") {
-@@ -283,35 +367,40 @@
+@@ -283,35 +366,40 @@
                  resolve(savedPaths)
              }
  
@@ -211,7 +203,7 @@ diff --git a/src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/Japscan
                          }
                      }
                  }
-@@ -332,7 +421,7 @@
+@@ -332,7 +420,7 @@
          return runCatching {
              val bytes = Base64.decode(dataUri.substring(commaIdx + 1), Base64.DEFAULT)
              val file = File(applicationContext.cacheDir, "$sessionTag-$size.bin")
@@ -220,19 +212,23 @@ diff --git a/src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/Japscan
              file.absolutePath
          }.getOrNull()
      }
-@@ -352,6 +441,11 @@
+@@ -352,6 +440,15 @@
      }
  
      override fun setupPreferenceScreen(screen: PreferenceScreen) {
-+        Preference(screen.context).apply {
++        ListPreference(screen.context).apply {
++            val status = preferences.getString(LAST_LOAD_STATUS, "Aucun chargement").orEmpty()
++            key = "tachivf_last_load_status_view"
 +            title = "Dernier chargement"
-+            summary = preferences.getString(LAST_LOAD_STATUS, "Aucun chargement")
-+            isSelectable = false
++            summary = status
++            entries = arrayOf(status)
++            entryValues = arrayOf("status")
++            setDefaultValue("status")
 +        }.let(screen::addPreference)
          ListPreference(screen.context).apply {
              key = SHOW_SPOILER_CHAPTERS
              title = SHOW_SPOILER_CHAPTERS_TITLE
-@@ -403,6 +497,8 @@
+@@ -403,6 +500,8 @@
  
          private const val CACHE_HOST = "japscan-cache.local"
          private const val CACHE_FILE_PREFIX = "japscan-"
