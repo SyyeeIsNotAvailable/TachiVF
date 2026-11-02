@@ -1,10 +1,12 @@
 {
-  "apk/tachiyomi-fr.animesama-v1.6.1.apk": "806ec76d70bd9033badd21d8b4af8c1ba638cac40d8e470a5efd17d38bbd5703",
-  "apk/tachiyomi-fr.aniverse-v1.6.2.apk": "0f99238317c94550018711efa5fdc22aa2442c4c6a353e6bbfa9436fb6eb5fe8",
-  "apk/tachiyomi-fr.mangakawaii-v1.6.1.apk": "da483aebdf7b1ca1388f8a759a3c87301380ceb286f9414a9efc033fd0e70e78",
-  "apk/tachiyomi-fr.mangascantrad-v1.6.60.apk": "46443c78892ad06db2523408650240df3b33f8ff73d3c850fa34bf08db392c1c",
-  "jar/tachiyomi-fr.animesama-v1.6.1.jar": "4069fe4e883fef3658a464f26d39dea365e278dc0da426f7a69de0138f732892",
-  "jar/tachiyomi-fr.aniverse-v1.6.2.jar": "50490a2746c49ecc7d91ce5bf302cd67128154135e3244d28306429782d94bdf",
-  "jar/tachiyomi-fr.mangakawaii-v1.6.1.jar": "3580c0d2e06c19458c538b4675184ce65ac71f2abd566e45443d13780f8e018f",
-  "jar/tachiyomi-fr.mangascantrad-v1.6.60.jar": "1b86adfbd4ad0b8a0cd7f8f0190314f3c5cb4dab498098087de602c2be0de62e"
+  "apk/tachiyomi-fr.animesama-v1.6.2.apk": "a98f4fa19fcfac7b9f1b65e42df934754d193307b8a5a03bc2999226fe0c23ed",
+  "apk/tachiyomi-fr.aniverse-v1.6.4.apk": "2d410bc65a440eed0775d6da3f0c819c650d9224e0e8898a1a956dd4d9819c6a",
+  "apk/tachiyomi-fr.japscan-v1.6.2.apk": "35fb4620b41c31aa64214d63cad787e73f436243039c6cb4f770de50646d88f7",
+  "apk/tachiyomi-fr.mangakawaii-v1.6.2.apk": "7e2925973a12973e5e52e6606234bdda6c6eb4975e9941efaf204478281f715b",
+  "apk/tachiyomi-fr.mangascantrad-v1.6.61.apk": "0a6656415fe31b921b340fdf5b1d0432241353b119984320af5ed9f6cd608e16",
+  "jar/tachiyomi-fr.animesama-v1.6.2.jar": "a1cc7497b4c99f996b636505523c6ef8145347b659cba1d84e809520928d6c6e",
+  "jar/tachiyomi-fr.aniverse-v1.6.4.jar": "a62b5986421027ccde3162fb827e22d049236d448cf542e152507cc3de16ac8f",
+  "jar/tachiyomi-fr.japscan-v1.6.2.jar": "6cb61356097edb29e3ba6d8fb385e8a57c1db4482f716a75789c031bd9c921b5",
+  "jar/tachiyomi-fr.mangakawaii-v1.6.2.jar": "49512d118c6d2548451e4ea47ea1c47ced5ee16ae41fa94c67794ea9a7669047",
+  "jar/tachiyomi-fr.mangascantrad-v1.6.61.jar": "af1897816b8f5123f57eb40950aee2708a22fbee5d3e83031e003743a11036a4"
 }
