@@ -1,0 +1,281 @@
+diff --git a/src/fr/japscan/build.gradle.kts b/src/fr/japscan/build.gradle.kts
+--- a/src/fr/japscan/build.gradle.kts
++++ b/src/fr/japscan/build.gradle.kts
+@@ -17,5 +17,5 @@
+     }
+ 
+     // Keep the local patch version above the synchronized upstream version.
+-    versionCode.set(versionCode.get() + 1)
++    versionCode.set(versionCode.get() + 2)
+ }
+diff --git a/src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/Japscan.kt b/src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/Japscan.kt
+--- a/src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/Japscan.kt
++++ b/src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/Japscan.kt
+@@ -17,11 +17,13 @@
+ import keiyoushi.network.post
+ import keiyoushi.network.rateLimit
+ import keiyoushi.source.KeiSource
++import keiyoushi.utils.WebViewScope
+ import keiyoushi.utils.applicationContext
+ import keiyoushi.utils.asJsoup
+ import keiyoushi.utils.getPreferencesLazy
+ import keiyoushi.utils.parseAs
+ import keiyoushi.utils.runWebView
++import keiyoushi.utils.sha256
+ import keiyoushi.utils.tryParseDate
+ import kotlinx.coroutines.sync.Mutex
+ import kotlinx.coroutines.sync.withLock
+@@ -246,21 +248,82 @@
+             val urlSegment = chapter.url.trimStart('/').substringBefore('/').lowercase()
+             val isWebtoon = urlSegment == "manhwa" || urlSegment == "manhua"
+ 
++            if (!isWebtoon) {
++                val count = fetchPageCount(chapterUrl)
++                return List(count) { index -> Page(index, url = "$chapterUrl#tachivf=$index:$count") }
++            }
++
+             val cachedPages = runReaderWebView(chapterUrl, isWebtoon, urlSegment)
+             if (cachedPages.isEmpty()) {
+                 throw Exception("Erreur lors de la récupération des pages")
+             }
+             return cachedPages.mapIndexed { i, path -> Page(i, imageUrl = "https://$CACHE_HOST$path") }
+         }
++    }
++
++    override suspend fun getImageUrl(page: Page): String = pageListMutex.withLock {
++        val url = page.url.toHttpUrl()
++        val metadata = requireNotNull(url.fragment).removePrefix("tachivf=").split(':')
++        val index = metadata[0].toInt()
++        val total = metadata[1].toInt()
++        require(index in 0 until total)
++        val chapterUrl = url.newBuilder().fragment(null).build().toString()
++        val cacheTag = "$CACHE_FILE_PREFIX${chapterUrl.sha256().toHexString()}"
++        val file = File(applicationContext.cacheDir, "$cacheTag-$index.bin")
++        if (!file.isFile || file.length() == 0L) {
++            val start = index / PAGINATED_BATCH_SIZE * PAGINATED_BATCH_SIZE
++            val count = minOf(PAGINATED_BATCH_SIZE, total - start)
++            val paths = runReaderWebView(
++                chapterUrl,
++                isWebtoon = false,
++                urlSegment = "",
++                startPage = start,
++                pageCount = count,
++                cacheTag = cacheTag,
++            )
++            check(paths.size == count && file.isFile) { "Japscan : capture incomplète, réessayez la page." }
++        }
++        "https://$CACHE_HOST${file.absolutePath}"
++    }
++
++    private fun <T> WebViewScope<T>.blockAdvertisements() {
++        interceptRequest { request ->
++            val host = request.url.host ?: return@interceptRequest null
++            if (ALLOWED_HOSTS.any { host == it || host.endsWith(".$it") }) {
++                null
++            } else {
++                WebResourceResponse("text/plain", "utf-8", ByteArrayInputStream(ByteArray(0)))
++            }
++        }
++    }
++
++    private suspend fun fetchPageCount(chapterUrl: String): Int = runWebView(timeout = 30.seconds) {
++        userAgent = headers["User-Agent"]!!
++        blockAdvertisements()
++        injectAtDocumentStart(ACLIB_STUB, setOf(baseUrl))
++        poll(500.milliseconds) {
++            evaluateJs(READER_STATE_SCRIPT) { state ->
++                when (state) {
++                    "\"captcha\"" -> reject(Exception(SITE_CAPTCHA_MESSAGE))
++                    "\"ready\"" -> evaluateJs("document.getElementById('pages').options.length") { value ->
++                        value.toIntOrNull()?.takeIf { it > 0 }?.let(::resolve)
++                    }
++                }
++            }
++        }
++        loadUrl(chapterUrl)
+     }
+ 
+     private suspend fun runReaderWebView(
+         chapterUrl: String,
+         isWebtoon: Boolean,
+         urlSegment: String,
++        startPage: Int = 0,
++        pageCount: Int? = null,
++        cacheTag: String? = null,
+     ): List<String> {
+         val interfaceName = randomString()
+-        val sessionTag = "$CACHE_FILE_PREFIX${System.currentTimeMillis()}"
++        val sessionTag = cacheTag ?: "$CACHE_FILE_PREFIX${System.currentTimeMillis()}"
+         val savedPaths = mutableListOf<String>()
+         var done = false
+ 
+@@ -275,7 +338,12 @@
+             }
+ 
+             jsBridge("${interfaceName}_savePage") { dataUri ->
+-                savePage(dataUri, sessionTag, savedPaths.size)?.let(savedPaths::add)
++                val path = savePage(dataUri, sessionTag, startPage + savedPaths.size)
++                if (path == null) {
++                    reject(Exception("Japscan : impossible d'enregistrer la page."))
++                } else {
++                    savedPaths.add(path)
++                }
+             }
+ 
+             jsBridge("${interfaceName}_passDone") {
+@@ -283,35 +351,32 @@
+                 resolve(savedPaths)
+             }
+ 
+-            // The reader pulls rotating ad hosts whose modals break the detached descrambler,
+-            // so only the origins the reader needs are allowed.
+-            interceptRequest { request ->
+-                val host = request.url.host ?: return@interceptRequest null
+-                if (ALLOWED_HOSTS.any { host == it || host.endsWith(".$it") }) {
+-                    null
+-                } else {
+-                    // A null body keeps some WebView builds pending, stalling the capture
+-                    WebResourceResponse("text/plain", "utf-8", ByteArrayInputStream(ByteArray(0)))
+-                }
+-            }
++            jsBridge("${interfaceName}_captureError") { message ->
++                reject(Exception("Japscan : $message"))
++            }
++
++            blockAdvertisements()
+ 
+             val origins = setOf(baseUrl)
+             injectAtDocumentStart(ACLIB_STUB, origins)
+             injectAtDocumentStart(if (isWebtoon) webtoonHooks(interfaceName) else PAGINATED_HOOK, origins)
+ 
+-            var finished = false
+             var driverStarted = false
+-            onPageStarted { finished = false }
+-            onPageFinished { finished = true }
+             // Observe the existing document; fetching the chapter again can renew its captcha.
+             poll(500.milliseconds) {
+-                if (!finished || driverStarted) return@poll
++                if (driverStarted) return@poll
+                 evaluateJs(READER_STATE_SCRIPT) { state ->
+                     when (state) {
+                         "\"captcha\"" -> reject(Exception(SITE_CAPTCHA_MESSAGE))
+                         "\"ready\"" -> if (!driverStarted) {
+                             driverStarted = true
+-                            evaluateJs(if (isWebtoon) webtoonDriver(interfaceName, urlSegment) else paginatedDriver(interfaceName))
++                            evaluateJs(
++                                if (isWebtoon) {
++                                    webtoonDriver(interfaceName, urlSegment)
++                                } else {
++                                    paginatedBatchDriver(interfaceName, startPage, requireNotNull(pageCount))
++                                },
++                            )
+                         }
+                     }
+                 }
+@@ -332,7 +397,7 @@
+         return runCatching {
+             val bytes = Base64.decode(dataUri.substring(commaIdx + 1), Base64.DEFAULT)
+             val file = File(applicationContext.cacheDir, "$sessionTag-$size.bin")
+-            file.writeBytes(bytes)
++            if (!file.isFile || file.length() == 0L) file.writeBytes(bytes)
+             file.absolutePath
+         }.getOrNull()
+     }
+@@ -403,6 +468,7 @@
+ 
+         private const val CACHE_HOST = "japscan-cache.local"
+         private const val CACHE_FILE_PREFIX = "japscan-"
++        private const val PAGINATED_BATCH_SIZE = 4
+         private val IDLE_TIMEOUT = 45.seconds
+ 
+         // Under ~1280px wide the long-strip reader lazy-loads tiles on scroll, which a detached
+diff --git a/src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/PaginatedReader.kt b/src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/PaginatedReader.kt
+new file mode 100644
+--- /dev/null
++++ b/src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/PaginatedReader.kt
+@@ -0,0 +1,85 @@
++package eu.kanade.tachiyomi.extension.fr.japscan
++
++internal fun paginatedBatchDriver(interfaceName: String, startPage: Int, pageCount: Int) = $$"""
++    (async function() {
++        if (window.__japscanDriverStarted) return;
++        window.__japscanDriverStarted = true;
++        var sleep = function(ms) { return new Promise(function(resolve) { setTimeout(resolve, ms); }); };
++        var selected = document.getElementById('pages');
++        var current = $$startPage;
++        var count = $$pageCount;
++
++        async function waitForBlob(timeout) {
++            var elapsed = 0;
++            while (!window.__japscanLastBlob && elapsed < timeout) {
++                await sleep(100);
++                elapsed += 100;
++            }
++            if (!window.__japscanLastBlob) throw new Error('image introuvable pour la page ' + (current + 1));
++            var latest = window.__japscanLastBlob;
++            var stable = 0;
++            while (stable < 400) {
++                await sleep(100);
++                if (latest !== window.__japscanLastBlob) {
++                    latest = window.__japscanLastBlob;
++                    stable = 0;
++                } else {
++                    stable += 100;
++                }
++            }
++            return latest;
++        }
++
++        function selectPage(index) {
++            window.__japscanLastBlob = null;
++            selected.value = String(index);
++            selected.dispatchEvent(new Event('change', {bubbles: true}));
++        }
++
++        try {
++            if (!selected || current < 0 || count < 1 || current + count > selected.options.length) {
++                throw new Error('nombre de pages modifié ; actualisez le chapitre');
++            }
++            var first = await waitForBlob(10000);
++            // Discard pre-rendered blobs and force a fresh render of the requested first page.
++            if (selected.options.length > 1) {
++                var other = current === 0 ? 1 : 0;
++                if (Number(selected.value) !== other) {
++                    selectPage(other);
++                    await waitForBlob(8000);
++                }
++                selectPage(current);
++                first = await waitForBlob(8000);
++            }
++            for (var offset = 0; offset < count; offset++) {
++                current = $$startPage + offset;
++                var url;
++                if (offset === 0) {
++                    url = first;
++                } else {
++                    selectPage(current);
++                    url = await waitForBlob(8000);
++                }
++                try {
++                    var response = await fetch(url);
++                    var blob = await response.blob();
++                    var data = await new Promise(function(resolve, reject) {
++                        var reader = new FileReader();
++                        reader.onload = function() { resolve(reader.result); };
++                        reader.onerror = reject;
++                        reader.readAsDataURL(blob);
++                    });
++                    if (typeof data !== 'string' || data.indexOf('data:image/') !== 0) {
++                        throw new Error('image invalide pour la page ' + (current + 1));
++                    }
++                    window.$${interfaceName}_savePage.post(data);
++                } finally {
++                    URL.revokeObjectURL(url);
++                }
++            }
++            window.$${interfaceName}_passDone.post('');
++        } catch (error) {
++            window.$${interfaceName}_captureError.post('page ' + (current + 1) + ' : ' + String(error.message || error));
++        }
++    })();
++""".trimIndent()

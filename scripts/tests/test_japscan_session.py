@@ -76,3 +76,78 @@ class JapscanSessionTests(unittest.TestCase):
         self.assertGreater(count, 0)
         self.assertIn(self.module + '/build.gradle.kts', plan)
         self.assertEqual(metadata.read_text(), content)
+
+    def run_batch(self, start, count, total=68, no_blob=False, fail_page=None):
+        patches.apply(self.root)
+        source = next((self.root / self.module).rglob('PaginatedReader.kt')).read_text(encoding='utf-8')
+        script = textwrap.dedent(re.search(r'= \$\$"""(.*?)"""', source, re.S).group(1))
+        script = script.replace('$${interfaceName}', 'probe').replace('$$startPage', str(start)).replace('$$pageCount', str(count))
+        fixture = {'total': total, 'noBlob': no_blob, 'failPage': fail_page}
+        runner = r'''
+            const vm = require('node:vm');
+            const input = JSON.parse(require('node:fs').readFileSync(0, 'utf8'));
+            const fixture = input.fixture;
+            let clock = 0;
+            const output = {pages: [], navigations: [], done: false, error: null};
+            let rendered = 0;
+            const window = {__japscanLastBlob: fixture.noBlob ? null : 'blob:' + (fixture.total - 1)};
+            const selected = {
+                value: '0', options: {length: fixture.total},
+                dispatchEvent() {
+                    const index = Number(this.value);
+                    if (index < 0 || index >= fixture.total) throw new Error('Invalid page navigation');
+                    output.navigations.push(index);
+                    if (index !== rendered && !fixture.noBlob) window.__japscanLastBlob = 'blob:' + index;
+                    rendered = index;
+                },
+            };
+            window.probe_savePage = {post(data) {output.pages.push(Number(data.split(',')[1]));}};
+            window.probe_passDone = {post() {output.done = true;}};
+            window.probe_captureError = {post(message) {output.error = message;}};
+            class FileReader {
+                readAsDataURL(blob) {this.result = 'data:image/mock,' + blob.page; this.onload();}
+            }
+            const context = {
+                window, document: {getElementById: () => selected},
+                Event: class Event {}, FileReader, URL: {revokeObjectURL() {}},
+                setTimeout(callback, delay) {clock += delay; Promise.resolve().then(callback);},
+                async fetch(url) {
+                    const page = Number(url.split(':')[1]);
+                    if (page === fixture.failPage) throw new Error('Image request failed');
+                    return {async blob() {return {page};}};
+                },
+            };
+            Promise.resolve(vm.runInNewContext(input.script, context, {timeout: 1000}))
+                .then(() => {output.clock = clock; console.log(JSON.stringify(output));})
+                .catch(error => {console.error(error); process.exitCode = 1;});
+        '''
+        result = subprocess.run(['node', '-e', runner], input=json.dumps({'script': script, 'fixture': fixture}),
+                                text=True, encoding='utf-8', check=True, capture_output=True)
+        return json.loads(result.stdout)
+
+    def test_batch_captures_only_requested_pages_in_order(self):
+        for start, count, total in [(0, 4, 68), (16, 4, 68), (64, 4, 68), (0, 1, 1)]:
+            with self.subTest(start=start, total=total):
+                result = self.run_batch(start, count, total)
+                self.assertEqual(result['pages'], list(range(start, start + count)))
+                self.assertTrue(result['done'])
+                self.assertIsNone(result['error'])
+
+    def test_batch_fails_fast_when_no_image_is_produced(self):
+        result = self.run_batch(0, 4, no_blob=True)
+        self.assertEqual(result['pages'], [])
+        self.assertFalse(result['done'])
+        self.assertIn('page 1', result['error'])
+        self.assertLessEqual(result['clock'], 10000)
+
+    def test_missing_image_cannot_shift_later_page_numbers(self):
+        result = self.run_batch(0, 4, fail_page=2)
+        self.assertEqual(result['pages'], [0, 1])
+        self.assertFalse(result['done'])
+        self.assertIn('page 3', result['error'])
+
+    def test_changed_page_count_stops_capture(self):
+        result = self.run_batch(0, 4, total=3)
+        self.assertEqual(result['pages'], [])
+        self.assertFalse(result['done'])
+        self.assertIn('actualisez', result['error'])
