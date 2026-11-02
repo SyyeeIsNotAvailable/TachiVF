@@ -1,7 +1,7 @@
 diff --git a/src/fr/japscan/build.gradle.kts b/src/fr/japscan/build.gradle.kts
 --- a/src/fr/japscan/build.gradle.kts
 +++ b/src/fr/japscan/build.gradle.kts
-@@ -16,3 +16,27 @@
+@@ -16,3 +16,32 @@
          id = 11L
      }
  }
@@ -28,6 +28,11 @@ diff --git a/src/fr/japscan/build.gradle.kts b/src/fr/japscan/build.gradle.kts
 +    testImplementation(libs.bundles.common)
 +    testImplementation(libs.tachiyomi.lib.v16)
 +    testImplementation(libs.junit)
++}
++
++// Unit tests do not declare extensions for the source metadata processor.
++tasks.matching { it.name.startsWith("ksp") && it.name.endsWith("UnitTestKotlin") }.configureEach {
++    enabled = false
 +}
 diff --git a/src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/Japscan.kt b/src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/Japscan.kt
 --- a/src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/Japscan.kt
