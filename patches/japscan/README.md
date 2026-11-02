@@ -1,7 +1,5 @@
-# Patchs Japscan
+# Japscan
 
-Le code dans `src/fr/japscan` reste synchronisé avec Keiyoushi.
-Les correctifs listés dans `series` sont appliqués avant compilation.
-Un conflit bloque la publication.
-
-Anciens patchs retirés : retour à la base Keiyoushi pour analyse.
+Base Keiyoushi synchronisée, patch appliqué avant compilation.
+`0001-native-reader.patch` : URL des images décodées directement, sans capture WebView ni lots de pages.
+Un conflit bloque la publication. Version Keiyoushi + 3.
