@@ -46,13 +46,14 @@ class JapscanSessionTests(unittest.TestCase):
             {'needed': False, 'pages': 0, 'webtoon': True, 'expected': 'ready'},
             {'needed': False, 'pages': 0, 'webtoon': False, 'expected': 'loading'},
             {'needed': None, 'pages': 0, 'webtoon': False, 'expected': 'loading'},
+            {'needed': False, 'poisoned': True, 'pages': 20, 'webtoon': False, 'expected': 'blocked'},
         ]
         runner = '''
             const vm = require('node:vm');
             const input = JSON.parse(require('node:fs').readFileSync(0, 'utf8'));
             for (const item of input.cases) {
                 const context = {
-                    window: {__captcha: item.needed === null ? undefined : {needed: item.needed}},
+                    window: {__captcha: item.needed === null ? undefined : {needed: item.needed}, __poisoned: item.poisoned},
                     document: {
                         getElementById: () => ({options: {length: item.pages}}),
                         querySelector: () => item.webtoon ? {} : null,
