@@ -18,7 +18,7 @@
     },
     "CONTRIBUTING.md": {
       "mode": "100644",
-      "sha": "92ade7ac7aa6ee3eb413422177e33b47d667662c"
+      "sha": "3b7369d562869906171fdde6552a3ca1bfd43816"
     },
     "LICENSE": {
       "mode": "100644",
@@ -58,7 +58,7 @@
     },
     "core/src/main/kotlin/keiyoushi/network/BrowserHeaders.kt": {
       "mode": "100644",
-      "sha": "c8f4ed6dd7323d918724b52dc353477d96654d88"
+      "sha": "9378ab644d25b191098502d5119aef68c088c76a"
     },
     "core/src/main/kotlin/keiyoushi/network/BrowserRequests.kt": {
       "mode": "100644",
@@ -78,7 +78,7 @@
     },
     "core/src/main/kotlin/keiyoushi/network/OkHttp.kt": {
       "mode": "100644",
-      "sha": "ca59616740eaf4a1d37d9943dc40c596cc70d162"
+      "sha": "f9328ba871b8a2cba6b8043defed0d4427d6948c"
     },
     "core/src/main/kotlin/keiyoushi/network/RateLimit.kt": {
       "mode": "100644",
@@ -94,7 +94,7 @@
     },
     "core/src/main/kotlin/keiyoushi/source/KeiSource.kt": {
       "mode": "100644",
-      "sha": "b553f2e19f624d7c34b387348bb6fa80094af92a"
+      "sha": "b41351f153146ff56546223fd1e6867a43b8e049"
     },
     "core/src/main/kotlin/keiyoushi/source/MirrorPreferences.kt": {
       "mode": "100644",
@@ -126,7 +126,7 @@
     },
     "core/src/main/kotlin/keiyoushi/utils/GraphQL.kt": {
       "mode": "100644",
-      "sha": "43691b64c726feaea4162e0f968df84f3446239a"
+      "sha": "2bc9b6b305724e96da78c5ca551011b70cc9da56"
     },
     "core/src/main/kotlin/keiyoushi/utils/Inflater.kt": {
       "mode": "100644",
@@ -258,11 +258,11 @@
     },
     "core/src/test/kotlin/keiyoushi/network/BrowserHeadersCacheTest.kt": {
       "mode": "100644",
-      "sha": "1848c8979e95392ba177aeac7391140c0ab9a7f0"
+      "sha": "1ea09add21b06e3096dd59ef98f593c3d315b484"
     },
     "core/src/test/kotlin/keiyoushi/network/BrowserHeadersTest.kt": {
       "mode": "100644",
-      "sha": "5a17c3fe8cbb8b30f21de5e8171a9020dc83fafa"
+      "sha": "cc8ebdeabfb3cffe479c361c5324cd53c5a152c7"
     },
     "core/src/test/kotlin/keiyoushi/network/DeflateTest.kt": {
       "mode": "100644",
@@ -446,7 +446,7 @@
     },
     "gradle/libs.versions.toml": {
       "mode": "100644",
-      "sha": "8eab45a8a9bf29bf3c2a7cb448af8e00fefddeca"
+      "sha": "b539e2aa20aa772e2d34ee5a47f05ee36a28da43"
     },
     "gradle/wrapper/gradle-wrapper.jar": {
       "mode": "100644",
@@ -486,7 +486,7 @@
     },
     "lib-multisrc/madara/build.gradle.kts": {
       "mode": "100644",
-      "sha": "80f72222e003506a68b0c03d5950fe29ed854a7c"
+      "sha": "2af20eab3df058561fca01e8e5ac1a6ab8d38a6f"
     },
     "lib-multisrc/madara/res/mipmap-hdpi/ic_launcher.png": {
       "mode": "100644",
@@ -514,15 +514,15 @@
     },
     "lib-multisrc/madara/src/eu/kanade/tachiyomi/multisrc/madara/Madara.kt": {
       "mode": "100644",
-      "sha": "9711026ddec85a885bcaa184be3f0b93798aac0b"
+      "sha": "f9c115a834c77a0e95d32ffa1cfbd74635bd9ae6"
     },
     "lib-multisrc/madara/src/eu/kanade/tachiyomi/multisrc/madara/MadaraBase.kt": {
       "mode": "100644",
-      "sha": "9a1e2f58db283c997cd9299f1d06f2b5b1057be8"
+      "sha": "60df3c252f5434f7d1ade2efb3fcf5db0dd0d1b7"
     },
     "lib-multisrc/madara/src/eu/kanade/tachiyomi/multisrc/madara/MadaraNoAjax.kt": {
       "mode": "100644",
-      "sha": "ac34716e09ad89d32ad0a1bc6df74a6df31ae90b"
+      "sha": "60ab3a0b5ebf46f1206806de3a78c5dba8960ca6"
     },
     "lib-multisrc/madara/src/eu/kanade/tachiyomi/multisrc/madara/Models.kt": {
       "mode": "100644",
@@ -538,11 +538,11 @@
     },
     "settings.gradle.kts": {
       "mode": "100644",
-      "sha": "d1cafce30560ebef0873ec18b325213cd66d8853"
+      "sha": "a4a7ad5ba715f32fef83b4aaefd382da54f742e5"
     },
     "src/fr/animesama/build.gradle.kts": {
       "mode": "100644",
-      "sha": "74e62ce46a9505f120153bca875bf6745ca0452d"
+      "sha": "f2c388f6584fee84d486d33e82d323a5113ecc3c"
     },
     "src/fr/animesama/res/mipmap-hdpi/ic_launcher.png": {
       "mode": "100644",
@@ -566,7 +566,7 @@
     },
     "src/fr/animesama/src/eu/kanade/tachiyomi/extension/fr/animesama/AnimeSama.kt": {
       "mode": "100644",
-      "sha": "0af28a4728d3e1cca9e6cf230205b23d149acffc"
+      "sha": "18e967c24689d0e1a0cbbd5b5cdbddb5a879f4de"
     },
     "src/fr/animesama/src/eu/kanade/tachiyomi/extension/fr/animesama/Filters.kt": {
       "mode": "100644",
@@ -574,43 +574,79 @@
     },
     "src/fr/aniverse/build.gradle.kts": {
       "mode": "100644",
-      "sha": "4cfa8d89165a2ff4e080cca8bb6ed33054691085"
+      "sha": "584c0f49cf55f260a33be36d0b557e67b0478690"
     },
     "src/fr/aniverse/res/mipmap-hdpi/ic_launcher.png": {
       "mode": "100644",
-      "sha": "813d83f187129ecc8d038e085d9a11b8d143c9e1"
+      "sha": "c00273fee2fe0a4199abeeca5c6ddd65810b194c"
     },
     "src/fr/aniverse/res/mipmap-mdpi/ic_launcher.png": {
       "mode": "100644",
-      "sha": "8aa0feabdad3860b321f7d9d95a285da06aed113"
+      "sha": "5b611984e295fe09da4b9eb8a760011c9f515b70"
     },
     "src/fr/aniverse/res/mipmap-xhdpi/ic_launcher.png": {
       "mode": "100644",
-      "sha": "b5ff3cda2a75705b59141c72c758b326d59e0795"
+      "sha": "31b5e3864b9e2c9cf7ff339a719c78d6a7c3b7eb"
     },
     "src/fr/aniverse/res/mipmap-xxhdpi/ic_launcher.png": {
       "mode": "100644",
-      "sha": "6d59d2029d633cc2ed8da175a54fe72435174871"
+      "sha": "9ac4e050322fbc68775e8bbb8dccb6298d1d5720"
     },
     "src/fr/aniverse/res/mipmap-xxxhdpi/ic_launcher.png": {
       "mode": "100644",
-      "sha": "44f8db6c4c57ac4e2cff72c5dc88a6c4fc958f42"
+      "sha": "7cdcd1be7e89f79216f0db5d7af37be9f0e273b7"
     },
     "src/fr/aniverse/src/eu/kanade/tachiyomi/extension/fr/aniverse/Aniverse.kt": {
       "mode": "100644",
-      "sha": "360da0f5861572a304853a8b7d54432e76ac2202"
+      "sha": "1ca135c1bb1ccbf40a5ed6fdaa2bc72816c1e0f3"
     },
     "src/fr/aniverse/src/eu/kanade/tachiyomi/extension/fr/aniverse/Dto.kt": {
       "mode": "100644",
-      "sha": "b1fc6dce1a7e334838b4e3cf486e7e53cb7dc141"
+      "sha": "918dd5cb68d4496f57c19281ff80d43d4a3a1ff9"
     },
-    "src/fr/aniverse/src/eu/kanade/tachiyomi/extension/fr/aniverse/GenreFilter.kt": {
+    "src/fr/aniverse/src/eu/kanade/tachiyomi/extension/fr/aniverse/Filters.kt": {
       "mode": "100644",
-      "sha": "5b14ff3a99b80a084e74641d2fb22dbda2e6ef67"
+      "sha": "29586be14b9f633ffa706a0c86f83f212fff9c8d"
+    },
+    "src/fr/japscan/build.gradle.kts": {
+      "mode": "100644",
+      "sha": "3a5ef405fc3484a583582d0bbf4e0c527a791604"
+    },
+    "src/fr/japscan/res/mipmap-hdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "b82d8ad354208b45a80f155bbf2a43375283b7d8"
+    },
+    "src/fr/japscan/res/mipmap-mdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "149907fe7ef463714df789e0158b3763f6ed5c80"
+    },
+    "src/fr/japscan/res/mipmap-xhdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "19e532c613333dbb83048663cbeed221ad3def8c"
+    },
+    "src/fr/japscan/res/mipmap-xxhdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "a52d01912b818d85ff071cc1332ec88e561929e7"
+    },
+    "src/fr/japscan/res/mipmap-xxxhdpi/ic_launcher.png": {
+      "mode": "100644",
+      "sha": "7d2e1e13f988e8097054780b1f998943f1063b84"
+    },
+    "src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/Japscan.kt": {
+      "mode": "100644",
+      "sha": "a43e587791e66a93272266ccf92961fd086c50a8"
+    },
+    "src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/ReaderScripts.kt": {
+      "mode": "100644",
+      "sha": "5f01cf89c03c9d2d60d1383d96a09add307f0123"
+    },
+    "src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/SearchResultDto.kt": {
+      "mode": "100644",
+      "sha": "36ebad7e89631381a193f061b05ce3fb5f91eae0"
     },
     "src/fr/mangakawaii/build.gradle.kts": {
       "mode": "100644",
-      "sha": "abc882228fdc5d6aa54fffb0d9e73c203dc5c6b9"
+      "sha": "0d6abc626a0e60cb3e6c4c822779ad791b3b0846"
     },
     "src/fr/mangakawaii/res/mipmap-hdpi/ic_launcher.png": {
       "mode": "100644",
@@ -634,7 +670,7 @@
     },
     "src/fr/mangakawaii/src/eu/kanade/tachiyomi/extension/fr/mangakawaii/MangaKawaii.kt": {
       "mode": "100644",
-      "sha": "c2c08c314492c6c1fc7d0120a042e3f37da31ba3"
+      "sha": "169e1fdd8fcedb63c59d3d541c56451dac7d2275"
     },
     "src/fr/mangascantrad/build.gradle.kts": {
       "mode": "100644",
@@ -666,5 +702,5 @@
     }
   },
   "repository": "keiyoushi/extensions-source",
-  "revision": "0d83f6be79e12b0a8b6c6f20a500c0e9456c222a"
+  "revision": "efa93f5a3537856fe830450bbe33f69d21d28167"
 }

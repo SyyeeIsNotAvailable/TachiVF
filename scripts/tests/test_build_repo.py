@@ -38,7 +38,7 @@ class CatalogueTests(unittest.TestCase):
         self.generate()
         modern = index_pb2.Index.FromString(gzip.decompress((self.output / 'index.pb').read_bytes()))
         legacy = json.loads((self.output / 'index.min.json').read_text())
-        self.assertEqual(len(modern.extensionList.extensions), 4)
+        self.assertEqual(len(modern.extensionList.extensions), 5)
         self.assertEqual({str(s.id) for e in modern.extensionList.extensions for s in e.sources}, {s['id'] for e in legacy for s in e['sources']})
         self.assertEqual(modern.signingKey, self.fingerprint)
         for extension in modern.extensionList.extensions:
@@ -53,7 +53,7 @@ class CatalogueTests(unittest.TestCase):
 
     def test_missing_extension_prevents_partial_catalogue(self):
         next(self.artifacts.rglob('keiyoushi-source-info.json')).unlink()
-        with self.assertRaisesRegex(ValueError, 'exactly the four'):
+        with self.assertRaisesRegex(ValueError, 'exactly the selected'):
             self.generate()
 
     @patch('build_repo.signer_fingerprint', return_value='a' * 64)

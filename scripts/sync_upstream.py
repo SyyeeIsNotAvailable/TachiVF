@@ -13,7 +13,7 @@ import urllib.request
 ROOT = Path(__file__).resolve().parents[1]
 REPOSITORY = 'keiyoushi/extensions-source'
 STATE = 'docs/upstream/sync-state.json'
-MODULES = ('animesama', 'aniverse', 'mangakawaii', 'mangascantrad')
+MODULES = ('animesama', 'aniverse', 'japscan', 'mangakawaii', 'mangascantrad')
 DIRECTORIES = tuple('src/fr/' + module for module in MODULES) + ('lib-multisrc/madara', 'lib/i18n', 'core', 'compiler', 'common', 'gradle')
 FILES = ('.editorconfig', '.gitattributes', '.gitignore', 'AGENTS.md', 'CONTRIBUTING.md', 'LICENSE', 'build.gradle.kts', 'gradle.properties', 'settings.gradle.kts', 'gradlew', 'gradlew.bat', 'ext-bootstrap.py', 'ktlintCodeStyle.xml')
 
@@ -59,6 +59,15 @@ def merge_file(path, base, local, upstream):
 def fetch(url):
     with urllib.request.urlopen(url, timeout=30) as response:
         return response.read()
+
+
+def merge_settings(base, local, upstream):
+    old_name = b'rootProject.name = "Keiyoushi"'
+    our_name = b'rootProject.name = "TachiVF"'
+    if old_name in base and our_name in local and old_name in upstream:
+        merged = merge_file('settings.gradle.kts', base, local.replace(our_name, old_name, 1), upstream)
+        return merged.replace(old_name, our_name, 1)
+    return merge_file('settings.gradle.kts', base, local, upstream)
 
 
 def merge_wrapper(base, local, upstream, download=fetch):
@@ -127,7 +136,12 @@ def synchronize(root, upstream, baseline, load_base):
             base = load_base(path)
             if blob(base) != previous['sha']:
                 raise SyncConflict(f'{path}: invalid merge baseline')
-            result = merge_wrapper(base, local, remote) if path == 'gradle/wrapper/gradle-wrapper.properties' else merge_file(path, base, local, remote)
+            if path == 'gradle/wrapper/gradle-wrapper.properties':
+                result = merge_wrapper(base, local, remote)
+            elif path == 'settings.gradle.kts':
+                result = merge_settings(base, local, remote)
+            else:
+                result = merge_file(path, base, local, remote)
         plan[path] = result
     if not plan:
         return {}, baseline

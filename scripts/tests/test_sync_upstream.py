@@ -96,3 +96,18 @@ class SyncTests(unittest.TestCase):
         merged = sync.merge_wrapper(base, local, remote, download=lambda url: b'b' * 64)
         self.assertIn(b'downloads.gradle.org/distributions/gradle-9.9-bin.zip', merged)
         self.assertIn(b'distributionSha256Sum=' + b'b' * 64, merged)
+
+    def test_settings_upgrade_preserves_project_name(self):
+        base = b'enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")\n\nrootProject.name = "Keiyoushi"\n'
+        local = base.replace(b'"Keiyoushi"', b'"TachiVF"')
+        upstream = b'rootProject.name = "Keiyoushi"\n'
+        self.assertEqual(sync.merge_settings(base, local, upstream), b'rootProject.name = "TachiVF"\n')
+
+    def test_japscan_is_synchronized_without_changing_patch_series(self):
+        path = 'src/fr/japscan/src/Source.kt'
+        self.write(self.upstream, path, b'upstream Japscan fix\n')
+        self.write(self.upstream, 'patches/japscan/series', b'foreign.patch\n')
+        self.commit()
+        changes, _ = self.plan()
+        self.assertIn(path, changes)
+        self.assertNotIn('patches/japscan/series', changes)

@@ -15,7 +15,7 @@ import index_pb2
 
 
 ROOT = Path(__file__).resolve().parents[1]
-MODULES = {'fr.animesama', 'fr.aniverse', 'fr.mangakawaii', 'fr.mangascantrad'}
+MODULES = {'fr.animesama', 'fr.aniverse', 'fr.japscan', 'fr.mangakawaii', 'fr.mangascantrad'}
 
 
 def signer_fingerprint(path):
@@ -35,7 +35,7 @@ def generate(artifacts, output, repository, fingerprint, source=ROOT):
     files = sorted(artifacts.rglob('keiyoushi-source-info.json'))
     records = [json.loads(path.read_text(encoding='utf-8')) for path in files]
     if len(records) != len(MODULES) or {r['module'] for r in records} != MODULES:
-        raise ValueError('The catalogue must contain exactly the four selected extensions')
+        raise ValueError('The catalogue must contain exactly the selected extensions')
     identities = json.loads((source / 'docs/upstream/source-identities.json').read_text(encoding='utf-8'))
     expected = {v['packageName']: v['sourceId'] for v in identities}
     prepared = []

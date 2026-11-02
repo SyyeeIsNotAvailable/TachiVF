@@ -1,8 +1,10 @@
 $ErrorActionPreference = 'Stop'
 Push-Location (Split-Path $PSScriptRoot -Parent)
 try {
-    $modules = @('mangascantrad', 'mangakawaii', 'animesama', 'aniverse')
-    $checks = @(':lib-multisrc:madara:lintRelease')
+    & python scripts/apply_patches.py
+    if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+    $modules = @('mangascantrad', 'mangakawaii', 'animesama', 'aniverse', 'japscan')
+    $checks = @(':core:lintRelease', ':lib-multisrc:madara:lintRelease')
     $checks += $modules | ForEach-Object { ":src:fr:${_}:lintRelease" }
     & ./gradlew.bat --no-daemon @checks
     if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

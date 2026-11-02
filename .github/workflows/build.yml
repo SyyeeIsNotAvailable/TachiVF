@@ -2,7 +2,7 @@ name: Build and publish TachiVF
 
 on:
   push:
-    branches: [main]
+    branches: [main, 'feat/**']
   pull_request:
   workflow_dispatch:
   workflow_call:
@@ -51,7 +51,7 @@ jobs:
         env:
           SIGNING_BUNDLE: ${{ secrets.TACHIVF_SIGNING }}
         run: python scripts/signing.py restore
-      - name: Lint and compile the four extensions
+      - name: Apply local patches, lint and compile extensions
         run: sh scripts/build.sh
       - name: Save APKs and JARs
         uses: actions/upload-artifact@v7.0.2
@@ -83,6 +83,7 @@ jobs:
           path: |
             src/fr/*/build/reports/lint-results-release.*
             lib-multisrc/madara/build/reports/lint-results-release.*
+            core/build/reports/lint-results-release.*
 
   publish:
     needs: build

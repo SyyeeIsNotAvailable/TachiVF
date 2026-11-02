@@ -9,7 +9,7 @@ https://raw.githubusercontent.com/SyyeeIsNotAvailable/TachiVF/repo/repo.json
 
 Ancien format : [index.min.json](https://raw.githubusercontent.com/SyyeeIsNotAvailable/TachiVF/repo/index.min.json).
 
-Sources : Manga-Scantrad, MangaKawaii, AnimeSama Scan, Aniverse.
+Sources : Manga-Scantrad, MangaKawaii, AnimeSama Scan, Aniverse, Japscan.
 
 - `main` : code source.
 - `repo` : catalogue, APK, JAR et icônes.
@@ -17,4 +17,5 @@ Sources : Manga-Scantrad, MangaKawaii, AnimeSama Scan, Aniverse.
 
 Basé sur [Keiyoushi](https://github.com/keiyoushi/extensions-source), licence Apache-2.0.
 Synchronisation automatique toutes les six heures, puis compilation et publication si les vérifications passent.
-Tachimanga : quatre sources validées. Mihon : non testé.
+Patchs locaux : [patches/japscan](patches/japscan), appliqués après synchronisation et avant compilation.
+Tachimanga : les quatre premières sources validées ; Japscan à tester. Mihon : non testé.

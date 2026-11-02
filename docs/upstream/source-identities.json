@@ -26,5 +26,12 @@
     "sourceId": "540252682818453285",
     "language": "fr",
     "upstreamVersion": "1.6.59"
+  },
+  {
+    "name": "Japscan",
+    "packageName": "eu.kanade.tachiyomi.extension.fr.japscan",
+    "sourceId": "11",
+    "language": "fr",
+    "upstreamVersion": "1.6.2"
   }
 ]
