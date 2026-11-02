@@ -10,7 +10,7 @@ sh ./gradlew --no-daemon \
     :src:fr:animesama:lintRelease \
     :src:fr:aniverse:lintRelease \
     :src:fr:japscan:lintRelease \
-    :src:fr:japscan:testReleaseUnitTest
+    :src:fr:japscan:testDebugUnitTest
 sh ./gradlew --no-daemon \
     :src:fr:mangascantrad:assembleRelease \
     :src:fr:mangakawaii:assembleRelease \
