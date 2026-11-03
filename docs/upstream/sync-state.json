@@ -18,7 +18,7 @@
     },
     "CONTRIBUTING.md": {
       "mode": "100644",
-      "sha": "9fbad537f3690722addd5da3aa0fce0cef1951ba"
+      "sha": "bb0796c1883b5de3a7034b2c8d14c09900fc7e0e"
     },
     "LICENSE": {
       "mode": "100644",
@@ -374,7 +374,7 @@
     },
     "gradle/build-logic/src/main/kotlin/SpotlessPlugin.kt": {
       "mode": "100644",
-      "sha": "8a192c7191d1a4c737f25e758610295ec82fe22c"
+      "sha": "054da338b5f01fa764b8d8a60e7dd60b249ab2fa"
     },
     "gradle/build-logic/src/main/kotlin/ThemePlugin.kt": {
       "mode": "100644",
@@ -722,5 +722,5 @@
     }
   },
   "repository": "keiyoushi/extensions-source",
-  "revision": "726723b96a1b2a74f0ad000dacaa50f080de5e26"
+  "revision": "6296017a8abcd3ee42297cbbc140a3e711420136"
 }
