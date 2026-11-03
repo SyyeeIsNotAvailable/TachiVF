@@ -18,7 +18,7 @@
     },
     "CONTRIBUTING.md": {
       "mode": "100644",
-      "sha": "3b7369d562869906171fdde6552a3ca1bfd43816"
+      "sha": "9fbad537f3690722addd5da3aa0fce0cef1951ba"
     },
     "LICENSE": {
       "mode": "100644",
@@ -42,7 +42,7 @@
     },
     "compiler/src/main/kotlin/keiyoushi/processor/SourceProcessor.kt": {
       "mode": "100644",
-      "sha": "42532ca5240b156793b1ce4f7596523d0a6f423d"
+      "sha": "b34cec630b10146330dc138c43b0cf0477044e14"
     },
     "compiler/src/main/resources/META-INF/services/com.google.devtools.ksp.processing.SymbolProcessorProvider": {
       "mode": "100644",
@@ -56,9 +56,13 @@
       "mode": "100644",
       "sha": "ceca76f8b302c1975ef19184d9c5f164405b3cf1"
     },
+    "core/src/main/kotlin/keiyoushi/network/BaseUrlFetchInterceptor.kt": {
+      "mode": "100644",
+      "sha": "28aa408d9f163627082eaeb482034f6cd9e87b71"
+    },
     "core/src/main/kotlin/keiyoushi/network/BrowserHeaders.kt": {
       "mode": "100644",
-      "sha": "9378ab644d25b191098502d5119aef68c088c76a"
+      "sha": "038a70d210bd93386ecf4009ff444dd2be5c396f"
     },
     "core/src/main/kotlin/keiyoushi/network/BrowserRequests.kt": {
       "mode": "100644",
@@ -90,15 +94,19 @@
     },
     "core/src/main/kotlin/keiyoushi/source/CustomUrlPreferences.kt": {
       "mode": "100644",
-      "sha": "46e5ae9b57ff8b570c6e35574398a80d18588c79"
+      "sha": "25a70ca450ac966f85b90a748da491f05147c0d9"
+    },
+    "core/src/main/kotlin/keiyoushi/source/FetchableBaseUrl.kt": {
+      "mode": "100644",
+      "sha": "e140aa760790ee63978789d787067dd80f800798"
     },
     "core/src/main/kotlin/keiyoushi/source/KeiSource.kt": {
       "mode": "100644",
-      "sha": "b41351f153146ff56546223fd1e6867a43b8e049"
+      "sha": "ac08e41c0e36038a1c90d70c7ca2c8f2b7e36cea"
     },
     "core/src/main/kotlin/keiyoushi/source/MirrorPreferences.kt": {
       "mode": "100644",
-      "sha": "656dc67a325775355f4a095d38eb7bcc7bb70f2d"
+      "sha": "ec0ccbee357fd269a5d38449f55ff03e669a6c66"
     },
     "core/src/main/kotlin/keiyoushi/source/UrlActivity.kt": {
       "mode": "100644",
@@ -126,7 +134,7 @@
     },
     "core/src/main/kotlin/keiyoushi/utils/GraphQL.kt": {
       "mode": "100644",
-      "sha": "2bc9b6b305724e96da78c5ca551011b70cc9da56"
+      "sha": "229b9690c11d334d1c46165b66fdb46bc9118474"
     },
     "core/src/main/kotlin/keiyoushi/utils/Inflater.kt": {
       "mode": "100644",
@@ -143,6 +151,10 @@
     "core/src/main/kotlin/keiyoushi/utils/Jsoup.kt": {
       "mode": "100644",
       "sha": "81468719c8381beb822fbdc41e7de2b6a776233c"
+    },
+    "core/src/main/kotlin/keiyoushi/utils/Markdown.kt": {
+      "mode": "100644",
+      "sha": "154a76e94de46a07752163a61b4cb6b5532ffe61"
     },
     "core/src/main/kotlin/keiyoushi/utils/NextJs.kt": {
       "mode": "100644",
@@ -196,13 +208,13 @@
       "mode": "100644",
       "sha": "55d50a3dd90a6809207a8749195ee59907ce32b5"
     },
+    "core/src/main/kotlin/keiyoushi/zip/RemoteZip.kt": {
+      "mode": "100644",
+      "sha": "e54eef06c7a40c28bd2148facefe0328a17eefa5"
+    },
     "core/src/main/kotlin/keiyoushi/zip/Zip.kt": {
       "mode": "100644",
-      "sha": "40ea583ce4e08577ede8e62553b54f9d6af70ccd"
-    },
-    "core/src/main/kotlin/keiyoushi/zip/coroutines/Zip.kt": {
-      "mode": "100644",
-      "sha": "806df06578d7d14fbb9d550f41e275c8585aab10"
+      "sha": "d94e2bb9d4b21f870a999561d321e1e6f0df2c93"
     },
     "core/src/main/kotlin/org/chromium/support_lib_boundary/JsReplyProxyBoundaryInterface.kt": {
       "mode": "100644",
@@ -262,15 +274,23 @@
     },
     "core/src/test/kotlin/keiyoushi/network/BrowserHeadersTest.kt": {
       "mode": "100644",
-      "sha": "cc8ebdeabfb3cffe479c361c5324cd53c5a152c7"
+      "sha": "fa2d06228fd257041812ad3ac999a569e1632fa6"
     },
     "core/src/test/kotlin/keiyoushi/network/DeflateTest.kt": {
       "mode": "100644",
       "sha": "c31e1739142f38fb428e6e712a04a2321ca08509"
     },
+    "core/src/test/kotlin/keiyoushi/network/WebKitBrowserHeadersTest.kt": {
+      "mode": "100644",
+      "sha": "088cff8eefd006094d9f9653ea8d35421e657172"
+    },
     "core/src/test/kotlin/keiyoushi/utils/CryptoTest.kt": {
       "mode": "100644",
       "sha": "64ed1bd00474950fd3838330094f02a00f6959bb"
+    },
+    "core/src/test/kotlin/keiyoushi/utils/MarkdownTest.kt": {
+      "mode": "100644",
+      "sha": "eda29c7d837ad62e894e550d813aff25467898e9"
     },
     "core/src/test/kotlin/keiyoushi/utils/NextJsTest.kt": {
       "mode": "100644",
@@ -486,7 +506,7 @@
     },
     "lib-multisrc/madara/build.gradle.kts": {
       "mode": "100644",
-      "sha": "2af20eab3df058561fca01e8e5ac1a6ab8d38a6f"
+      "sha": "53f9c89754613e3ca991f316dacd7d0173249d83"
     },
     "lib-multisrc/madara/res/mipmap-hdpi/ic_launcher.png": {
       "mode": "100644",
@@ -518,7 +538,7 @@
     },
     "lib-multisrc/madara/src/eu/kanade/tachiyomi/multisrc/madara/MadaraBase.kt": {
       "mode": "100644",
-      "sha": "60df3c252f5434f7d1ade2efb3fcf5db0dd0d1b7"
+      "sha": "0be5bc0e7b507240f34ba89577b005035b2c25ef"
     },
     "lib-multisrc/madara/src/eu/kanade/tachiyomi/multisrc/madara/MadaraNoAjax.kt": {
       "mode": "100644",
@@ -702,5 +722,5 @@
     }
   },
   "repository": "keiyoushi/extensions-source",
-  "revision": "efa93f5a3537856fe830450bbe33f69d21d28167"
+  "revision": "726723b96a1b2a74f0ad000dacaa50f080de5e26"
 }
