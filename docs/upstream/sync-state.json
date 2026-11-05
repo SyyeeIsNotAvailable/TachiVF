@@ -18,7 +18,7 @@
     },
     "CONTRIBUTING.md": {
       "mode": "100644",
-      "sha": "bb0796c1883b5de3a7034b2c8d14c09900fc7e0e"
+      "sha": "89168282f2e5b1d86bf68c873f3514ae4502d6c4"
     },
     "LICENSE": {
       "mode": "100644",
@@ -62,11 +62,11 @@
     },
     "core/src/main/kotlin/keiyoushi/network/BrowserHeaders.kt": {
       "mode": "100644",
-      "sha": "038a70d210bd93386ecf4009ff444dd2be5c396f"
+      "sha": "ad1cdd99f19513719f12f333e30f7c89bbbd9a30"
     },
     "core/src/main/kotlin/keiyoushi/network/BrowserRequests.kt": {
       "mode": "100644",
-      "sha": "9870a9f72205172c2246d88832b9487e757fac2a"
+      "sha": "35dbb0c2a9abacedcc1ae3c7b0676c6d77545149"
     },
     "core/src/main/kotlin/keiyoushi/network/CacheControlInterceptor.kt": {
       "mode": "100644",
@@ -178,7 +178,7 @@
     },
     "core/src/main/kotlin/keiyoushi/utils/WebView.kt": {
       "mode": "100644",
-      "sha": "6e66e6019d259ef97a1c9db32004cc9ac1a32a8e"
+      "sha": "c170efe7f1192488c97f63826d0f6d37d77af95e"
     },
     "core/src/main/kotlin/keiyoushi/utils/protobuf/ProtobufDecoder.kt": {
       "mode": "100644",
@@ -206,7 +206,7 @@
     },
     "core/src/main/kotlin/keiyoushi/webview/internal/WebViewGlueBridge.kt": {
       "mode": "100644",
-      "sha": "55d50a3dd90a6809207a8749195ee59907ce32b5"
+      "sha": "7caeee06364f493e02415aaada60194c072bbc57"
     },
     "core/src/main/kotlin/keiyoushi/zip/RemoteZip.kt": {
       "mode": "100644",
@@ -219,6 +219,10 @@
     "core/src/main/kotlin/org/chromium/support_lib_boundary/JsReplyProxyBoundaryInterface.kt": {
       "mode": "100644",
       "sha": "94694407affcbf3fbbb9feaa92939b14c6427031"
+    },
+    "core/src/main/kotlin/org/chromium/support_lib_boundary/ProfileBoundaryInterface.kt": {
+      "mode": "100644",
+      "sha": "5bcff5bb72067f977f22adcce76abfa480954a37"
     },
     "core/src/main/kotlin/org/chromium/support_lib_boundary/ScriptHandlerBoundaryInterface.kt": {
       "mode": "100644",
@@ -238,7 +242,7 @@
     },
     "core/src/main/kotlin/org/chromium/support_lib_boundary/WebViewProviderBoundaryInterface.kt": {
       "mode": "100644",
-      "sha": "dac7e8485903af5a9a597232135281e3d55997ed"
+      "sha": "cf76627cad7a63dba388bc6f910926fd86329570"
     },
     "core/src/main/kotlin/org/chromium/support_lib_boundary/WebViewProviderFactoryBoundaryInterface.kt": {
       "mode": "100644",
@@ -274,7 +278,7 @@
     },
     "core/src/test/kotlin/keiyoushi/network/BrowserHeadersTest.kt": {
       "mode": "100644",
-      "sha": "fa2d06228fd257041812ad3ac999a569e1632fa6"
+      "sha": "d8381601d4549d6e6ee788fc6bfbb76e73e61565"
     },
     "core/src/test/kotlin/keiyoushi/network/DeflateTest.kt": {
       "mode": "100644",
@@ -295,6 +299,10 @@
     "core/src/test/kotlin/keiyoushi/utils/NextJsTest.kt": {
       "mode": "100644",
       "sha": "be906c9c983b34fd143bea0e6475daf885490dd1"
+    },
+    "core/src/test/kotlin/keiyoushi/utils/ProxyFetchTest.kt": {
+      "mode": "100644",
+      "sha": "f71f5ecc6ca42f6478f858424f409b1bb56554ab"
     },
     "core/src/test/kotlin/keiyoushi/utils/XorTest.kt": {
       "mode": "100644",
@@ -722,5 +730,5 @@
     }
   },
   "repository": "keiyoushi/extensions-source",
-  "revision": "6296017a8abcd3ee42297cbbc140a3e711420136"
+  "revision": "de743aed846da53e00c45ab26ee0e77f7bb4355b"
 }
