@@ -18,7 +18,7 @@
     },
     "CONTRIBUTING.md": {
       "mode": "100644",
-      "sha": "89168282f2e5b1d86bf68c873f3514ae4502d6c4"
+      "sha": "9186849d745f9771fcebd15263871f8f346b9f1d"
     },
     "LICENSE": {
       "mode": "100644",
@@ -50,7 +50,7 @@
     },
     "core/build.gradle.kts": {
       "mode": "100644",
-      "sha": "90a5463c223b35b6f08875a6800f4536da8bfa16"
+      "sha": "b9728e4136a781cdd7e98ed7eb42fc2852715eae"
     },
     "core/src/main/kotlin/keiyoushi/annotation/Source.kt": {
       "mode": "100644",
@@ -154,7 +154,7 @@
     },
     "core/src/main/kotlin/keiyoushi/utils/Markdown.kt": {
       "mode": "100644",
-      "sha": "154a76e94de46a07752163a61b4cb6b5532ffe61"
+      "sha": "ca63826650b38d50665970519eae7e179a7a515b"
     },
     "core/src/main/kotlin/keiyoushi/utils/NextJs.kt": {
       "mode": "100644",
@@ -178,7 +178,7 @@
     },
     "core/src/main/kotlin/keiyoushi/utils/WebView.kt": {
       "mode": "100644",
-      "sha": "c170efe7f1192488c97f63826d0f6d37d77af95e"
+      "sha": "21e4f53de0e13e04058ce3cd1caa9945256f38e1"
     },
     "core/src/main/kotlin/keiyoushi/utils/protobuf/ProtobufDecoder.kt": {
       "mode": "100644",
@@ -206,7 +206,7 @@
     },
     "core/src/main/kotlin/keiyoushi/webview/internal/WebViewGlueBridge.kt": {
       "mode": "100644",
-      "sha": "7caeee06364f493e02415aaada60194c072bbc57"
+      "sha": "5c46bbb83082770df4b211434b48a732c614aac3"
     },
     "core/src/main/kotlin/keiyoushi/zip/RemoteZip.kt": {
       "mode": "100644",
@@ -222,7 +222,7 @@
     },
     "core/src/main/kotlin/org/chromium/support_lib_boundary/ProfileBoundaryInterface.kt": {
       "mode": "100644",
-      "sha": "5bcff5bb72067f977f22adcce76abfa480954a37"
+      "sha": "f52372f76a314c9dccd2fb30414cb91d2e71642f"
     },
     "core/src/main/kotlin/org/chromium/support_lib_boundary/ScriptHandlerBoundaryInterface.kt": {
       "mode": "100644",
@@ -230,7 +230,7 @@
     },
     "core/src/main/kotlin/org/chromium/support_lib_boundary/WebMessageBoundaryInterface.kt": {
       "mode": "100644",
-      "sha": "07c779e0d168697b8a93a03754122c78a620da62"
+      "sha": "763bb4ada96e50cff34ac714ba60b0ba7bb4eb23"
     },
     "core/src/main/kotlin/org/chromium/support_lib_boundary/WebMessagePayloadBoundaryInterface.kt": {
       "mode": "100644",
@@ -238,11 +238,11 @@
     },
     "core/src/main/kotlin/org/chromium/support_lib_boundary/WebSettingsBoundaryInterface.kt": {
       "mode": "100644",
-      "sha": "84da3fc15c219cd36ca7910c826330b961fea95f"
+      "sha": "28457cc7c3e77710d11038fc189dcd87b6aaf5f2"
     },
     "core/src/main/kotlin/org/chromium/support_lib_boundary/WebViewProviderBoundaryInterface.kt": {
       "mode": "100644",
-      "sha": "cf76627cad7a63dba388bc6f910926fd86329570"
+      "sha": "bbe3f6da3203a66601071970eaa6a234548ef270"
     },
     "core/src/main/kotlin/org/chromium/support_lib_boundary/WebViewProviderFactoryBoundaryInterface.kt": {
       "mode": "100644",
@@ -294,7 +294,7 @@
     },
     "core/src/test/kotlin/keiyoushi/utils/MarkdownTest.kt": {
       "mode": "100644",
-      "sha": "eda29c7d837ad62e894e550d813aff25467898e9"
+      "sha": "5b9832191c4fb1763da068d9c0f366cb8962511c"
     },
     "core/src/test/kotlin/keiyoushi/utils/NextJsTest.kt": {
       "mode": "100644",
@@ -307,6 +307,10 @@
     "core/src/test/kotlin/keiyoushi/utils/XorTest.kt": {
       "mode": "100644",
       "sha": "929d279a440362c1403450bf6945ee8a2e12fa9d"
+    },
+    "core/src/test/kotlin/keiyoushi/webview/internal/WebViewGlueBridgeTest.kt": {
+      "mode": "100644",
+      "sha": "b3e853c25e92fcab3d87fd9017ca8dbe35011db8"
     },
     "core/src/test/resources/reactflight/collections.txt": {
       "mode": "100644",
@@ -474,7 +478,7 @@
     },
     "gradle/libs.versions.toml": {
       "mode": "100644",
-      "sha": "b539e2aa20aa772e2d34ee5a47f05ee36a28da43"
+      "sha": "32cbbed5273156a6d7dc2aa453c203b21cc36263"
     },
     "gradle/wrapper/gradle-wrapper.jar": {
       "mode": "100644",
@@ -482,7 +486,7 @@
     },
     "gradle/wrapper/gradle-wrapper.properties": {
       "mode": "100644",
-      "sha": "91c4fc64aa0c1eb52f55303a4eb534365cf2ee78"
+      "sha": "94c356a03a3bb60b2e852748e5a3a3cb36aada9c"
     },
     "gradlew": {
       "mode": "100755",
@@ -638,7 +642,7 @@
     },
     "src/fr/japscan/build.gradle.kts": {
       "mode": "100644",
-      "sha": "3a5ef405fc3484a583582d0bbf4e0c527a791604"
+      "sha": "2cbf63884192eb5da972297409b58874440e2e75"
     },
     "src/fr/japscan/res/mipmap-hdpi/ic_launcher.png": {
       "mode": "100644",
@@ -662,11 +666,11 @@
     },
     "src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/Japscan.kt": {
       "mode": "100644",
-      "sha": "a43e587791e66a93272266ccf92961fd086c50a8"
+      "sha": "8eee14cd90e169f92234a428b6b68b2131d1ee9b"
     },
     "src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/ReaderScripts.kt": {
       "mode": "100644",
-      "sha": "5f01cf89c03c9d2d60d1383d96a09add307f0123"
+      "sha": "8c955bc4f1788064894e341275b9643514bf809a"
     },
     "src/fr/japscan/src/eu/kanade/tachiyomi/extension/fr/japscan/SearchResultDto.kt": {
       "mode": "100644",
@@ -730,5 +734,5 @@
     }
   },
   "repository": "keiyoushi/extensions-source",
-  "revision": "de743aed846da53e00c45ab26ee0e77f7bb4355b"
+  "revision": "48b291828458a32c97c3b167be453258c1bd5a86"
 }
