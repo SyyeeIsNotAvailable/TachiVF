@@ -18,7 +18,7 @@
     },
     "CONTRIBUTING.md": {
       "mode": "100644",
-      "sha": "9186849d745f9771fcebd15263871f8f346b9f1d"
+      "sha": "c8482badea1d3214c14c70eadceb21a380b331f9"
     },
     "LICENSE": {
       "mode": "100644",
@@ -178,7 +178,7 @@
     },
     "core/src/main/kotlin/keiyoushi/utils/WebView.kt": {
       "mode": "100644",
-      "sha": "21e4f53de0e13e04058ce3cd1caa9945256f38e1"
+      "sha": "b8470faba1000adcd99681404b529586ac653f98"
     },
     "core/src/main/kotlin/keiyoushi/utils/protobuf/ProtobufDecoder.kt": {
       "mode": "100644",
@@ -206,15 +206,15 @@
     },
     "core/src/main/kotlin/keiyoushi/webview/internal/WebViewGlueBridge.kt": {
       "mode": "100644",
-      "sha": "5c46bbb83082770df4b211434b48a732c614aac3"
+      "sha": "b411ca6c279b0ad08295700a6f8a5eb9a634e9f3"
     },
     "core/src/main/kotlin/keiyoushi/zip/RemoteZip.kt": {
       "mode": "100644",
-      "sha": "e54eef06c7a40c28bd2148facefe0328a17eefa5"
+      "sha": "977824c492fa389a62efe442751cb4a763009b5c"
     },
     "core/src/main/kotlin/keiyoushi/zip/Zip.kt": {
       "mode": "100644",
-      "sha": "d94e2bb9d4b21f870a999561d321e1e6f0df2c93"
+      "sha": "7f56f542347c462655d2a2e6b492b91da83a4a95"
     },
     "core/src/main/kotlin/org/chromium/support_lib_boundary/JsReplyProxyBoundaryInterface.kt": {
       "mode": "100644",
@@ -311,6 +311,14 @@
     "core/src/test/kotlin/keiyoushi/webview/internal/WebViewGlueBridgeTest.kt": {
       "mode": "100644",
       "sha": "b3e853c25e92fcab3d87fd9017ca8dbe35011db8"
+    },
+    "core/src/test/kotlin/keiyoushi/zip/RemoteZipTest.kt": {
+      "mode": "100644",
+      "sha": "2d49e620b126c88b508665be4ca75c6c5641bafc"
+    },
+    "core/src/test/kotlin/keiyoushi/zip/ZipTest.kt": {
+      "mode": "100644",
+      "sha": "b88f4b85ac567af3bdbfdbd8f345c8c8deff0cfd"
     },
     "core/src/test/resources/reactflight/collections.txt": {
       "mode": "100644",
@@ -734,5 +742,5 @@
     }
   },
   "repository": "keiyoushi/extensions-source",
-  "revision": "48b291828458a32c97c3b167be453258c1bd5a86"
+  "revision": "1b7089818edf1e36bf71256369e4c6f36bbd9158"
 }
